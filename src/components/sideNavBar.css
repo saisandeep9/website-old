@@ -1,0 +1,32 @@
+#sidenav a {
+  /* position: absolute; */
+  position: fixed;
+  left: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+#sidenav a:hover {
+  left: 5px;
+}
+
+#instagram {
+  top: 210px;
+}
+
+#facebook {
+  top: 150px;
+}
+
+#twitter {
+  top: 270px;
+}
+
+#youtube {
+  top: 330px;
+}

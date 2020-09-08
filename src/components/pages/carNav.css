@@ -1,0 +1,84 @@
+.carnav0 {
+  box-shadow: 0px 0px 10px 0px rgb(100, 85, 85);
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 50%; */
+  width: 49%;
+  /* height: 100px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+  /* background-color: tomato; */
+
+  /* border-radius: 20px; */
+}
+.carnav0 ul {
+  list-style-type: none;
+
+  padding: 0;
+  /* overflow: auto; */
+
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+  /* background-color: rgb(231, 230, 235); */
+}
+.caranav0 li {
+  /* float: left; */
+
+  /* display: inline !important; */
+  /* text-align: center; */
+}
+.carnav0 li {
+  font-size: 20px;
+  display: inline-block;
+
+  /* box-shadow: 0px 0px 5px 0px rgb(100, 85, 85); */
+  /* float: left; */
+
+  /* display: block; */
+  color: rgb(7, 4, 4);
+  text-align: center;
+  border-radius: 50%;
+
+  padding: 0px 10px;
+  cursor: pointer;
+
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+}
+
+/* .carnav li a {
+
+  float: left;
+  display: block;
+  color: rgb(7, 4, 4);
+  text-align: center;
+
+  padding: 14px 16px;
+} */
+
+.carnav0 li:hover {
+  text-decoration: none;
+  background-color: rgb(59, 10, 236);
+  color: white;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  margin-top: 0;
+  /* background-color: red; */
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 15px solid #555;
+}
+
+/* nav bar 2  */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
