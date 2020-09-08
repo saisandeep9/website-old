@@ -14,19 +14,20 @@ const CarNav3 = (props) => {
     arrows: true,
     slidesToShow: 6,
     slidesToScroll: 1,
+    // centerMode: true,
 
     responsive: [
       {
         breakpoint: 960,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -38,7 +39,7 @@ const CarNav3 = (props) => {
       <div className="carnav">
         <ul className="">
           <Slider {...settings}>
-            <li onClick={() => select("sedan")}>
+            <li className="align-self-center" conClick={() => select("sedan")}>
               <img
                 src="images/cars/sedanic.png"
                 alt=""

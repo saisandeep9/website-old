@@ -54,7 +54,7 @@ class App extends Component {
             <Route path="/contactus" exact component={ContactUs} />
             {/* <Route path="/mobileApp" exact component={MobileApp} /> */}
           </Switch>
-          <SimpleSlider />
+
           {/* <Footer /> */}
           <SideNavBar />
         </main>
