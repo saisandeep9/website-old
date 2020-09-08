@@ -26,9 +26,8 @@ const Footer = () => {
 
         <div className="col-md-4 col-12 bg-dark  text-secondary ">
           <label className="mt-2 text-light  h5 ">Contact us</label>
-          {/* <hr /> */}
 
-          <div className="text-left   ml-4 ">
+          <div className="text-left ml-4 ">
             <label className="text-light ">Indian Taxis</label>
             <ul className="list-unstyled ">
               <li>
@@ -76,9 +75,9 @@ const Footer = () => {
                   <a
                     className="text-secondary"
                     style={{ textDecoration: "none" }}
-                    href="tel:+9108068464799"
+                    href="tel:+918068464799"
                   >
-                    &nbsp;&nbsp; +91 08068464799
+                    &nbsp;&nbsp; +91&nbsp;8068464799
                   </a>
                 </i>
               </li>

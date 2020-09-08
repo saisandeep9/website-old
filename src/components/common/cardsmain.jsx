@@ -7,26 +7,22 @@ const CardMain = (data) => {
       <img
         src={data.data.img}
         className="icon rounded "
-        alt=""
-        // style={{ width: "35%" }}
+        alt={data.data.title}
       />
       <div className=" ">
         <h5 className="text-secondary  text-left">{data.data.title}</h5>
 
-        <p className=" text-left  ">{data.data.text}</p>
+        <p className=" text-left  ">{data.data.text} </p>
         <div className="align-self-end mt-auto">
-          {/* <div className="v"> */}
           <a href={data.data.website} target="_blank">
-            {" "}
             <button className="btn ">
-              <h5>Go to web site</h5>
+              <h6>Go to web site</h6>
             </button>
           </a>
           <a href={data.data.app} target="_blank">
             <img
               src="images/googlePaly.png"
-              className=" "
-              alt=""
+              alt={"google paly store"}
               style={{ width: "250px" }}
             />
           </a>
