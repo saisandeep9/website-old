@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import CarNav from "./carNav";
+import CarSlider from "./carSlider";
 import carServiceData from "../../data/carServices";
-import CarNav3 from "../../components/pages/carNav3";
-import SimpleSlider from "../pages/carnav2";
 
 class CarServices extends Component {
   state = {
@@ -24,8 +22,6 @@ class CarServices extends Component {
   };
 
   render() {
-    // this.state.car.length === 1 && (let car = this.state.car[0]);
-
     return (
       <div>
         {this.state.car.length === 1 && (
@@ -41,8 +37,8 @@ class CarServices extends Component {
             }}
           >
             {/* <CarNav select={this.select} /> */}
-            <CarNav3 select={this.select} />
-            {/* <SimpleSlider select={this.select} /> */}
+            <CarSlider select={this.select} />
+
             <div className=" justify-content-center row  ">
               <div className="col-md-5    text-center">
                 <img

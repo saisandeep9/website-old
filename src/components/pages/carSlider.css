@@ -26,6 +26,7 @@
 
 .carnav li:hover {
   text-decoration: none;
-  background-color: rgb(59, 10, 236);
+  /* background-color: rgb(59, 10, 236); */
+  background-color: #ff9a30;
   color: white;
 }

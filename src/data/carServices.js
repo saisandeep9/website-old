@@ -14,7 +14,7 @@ const data = [
   {
     img: "images/cars/suv.png",
     carName: "suv",
-    title: "hatchback",
+    title: "SUV",
     text: "text part",
   },
   {

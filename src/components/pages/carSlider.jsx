@@ -1,17 +1,19 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./carNav3.css";
+import "./carSlider.css";
 import Slider from "react-slick";
 // import { Link } from "react-router-dom";
 
-const CarNav3 = (props) => {
+const CarSlider = (props) => {
   const { select } = props;
 
   let settings = {
-    infinite: false,
-    speed: 1000,
-    arrows: true,
+    infinite: true,
+
+    speed: 500,
+    focusOnSelect: true,
+    // arrows: true,
     slidesToShow: 6,
     slidesToScroll: 1,
     // centerMode: true,
@@ -39,7 +41,7 @@ const CarNav3 = (props) => {
       <div className="carnav">
         <ul className="">
           <Slider {...settings}>
-            <li className="align-self-center" conClick={() => select("sedan")}>
+            <li className="align-self-center" onClick={() => select("sedan")}>
               <img
                 src="images/cars/sedanic.png"
                 alt=""
@@ -90,4 +92,4 @@ const CarNav3 = (props) => {
   );
 };
 
-export default CarNav3;
+export default CarSlider;

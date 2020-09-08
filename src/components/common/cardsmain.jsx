@@ -2,7 +2,6 @@ import React from "react";
 import "./cardsmain.css";
 
 const CardMain = (data) => {
-  console.log(data.data.img);
   return (
     <div className="maincard col-md-4   ">
       <img

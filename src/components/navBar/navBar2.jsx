@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 // import { Navbar, Nav, Icon, Dropdown } from "rsuite";
-import NavBar1 from "../components/navBar1";
+import NavBar1 from "./navBar1";
 import {
   Nav,
   Navbar,
@@ -12,7 +12,9 @@ import {
   // Button,
 } from "react-bootstrap";
 
-const NavBar2 = () => {
+const NavBar2 = (props) => {
+  // super(props);
+  // this.state = { isOpen: false };
   const preventRefresh = (e) => {
     console.log("nav bar");
     e.preventDefault();
@@ -39,21 +41,23 @@ const NavBar2 = () => {
               <small className="text-dark font-weight-bold ">
                 <i className="fa fa-phone " style={{ fontSize: "20px" }}></i>{" "}
                 &nbsp;&nbsp;
-                <a href="tel:5554280940">+91&nbsp;8068464799</a>
+                <Link to={"tel:5554280940"} id="RouterNavLink">
+                  +91&nbsp;8068464799
+                </Link>
                 <br />
                 <img
                   src="images/whatsapp.png"
                   alt="whats App"
-                  style={{ width: "30px", height: "30px" }}
+                  style={{ width: "30px", height: "20px" }}
                 />{" "}
                 &nbsp;
-                <a
-                  href="https://api.whatsapp.com/send?phone=916364708090
-      &text=hello from Rst booking"
+                <Link
+                  to={`"https://api.whatsapp.com/send?phone=916364708090
+      &text=hello from Rst booking"`}
                   target="_blank"
                 >
                   +91&nbsp;6364708090
-                </a>
+                </Link>
               </small>
             </div>
           </label>

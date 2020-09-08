@@ -3,7 +3,6 @@ import CardsMain from "../common/cardsmain";
 import products from "../../data/products";
 
 const MainPage = () => {
-  console.log(products.products.map((p) => p));
   return (
     <div
       className="row justify-content-center  "
@@ -18,7 +17,6 @@ const MainPage = () => {
       {products.products.map((p) => (
         <CardsMain data={p} key={p.title} />
       ))}
-      {/* <CardsMain /> */}
     </div>
   );
 };
