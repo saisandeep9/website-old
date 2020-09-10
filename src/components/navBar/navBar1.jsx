@@ -27,6 +27,7 @@ const NavBar1 = () => {
               href="https://api.whatsapp.com/send?phone=918179600071
       &text=hello from Rst booking"
               target="_blank"
+              rel="noopener noreferrer"
             >
               +91&nbsp;6364708090
             </a>

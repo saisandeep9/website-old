@@ -55,7 +55,9 @@ const Footer = () => {
               </li>
             </ul>{" "}
             <hr />
-            <lable className="text-light ">My Taxicab</lable>
+            <lable htmlFor="MyTaxicab" className="text-light ">
+              My Taxicab
+            </lable>
             <ul className="list-unstyled">
               <li>
                 <i className="fa fa-envelope-open contact">

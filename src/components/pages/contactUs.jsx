@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Form from "../common/form";
 import Header from "../common/header";
 import Footer from "../pages/footer";
@@ -44,14 +44,14 @@ const ContactUs = () => {
       </header> */}
       <div className="row mt-5  justify-content-center ">
         <div className="col-md-5 m-1 ">
-          <div class="media mt-2">
+          <div className="media mt-2">
             <img
               src="/images/cc2.jpg"
               alt=""
               className="align-self-center"
               style={{ height: "50px", width: "70px" }}
             />
-            <div class="media-body">
+            <div className="media-body">
               <h6 className="mt-0">CUSTOMER SUPPORT</h6>
               <p>
                 {" "}
@@ -63,14 +63,14 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div class="media mt-2">
+          <div className="media mt-2">
             <img
               src="/images/whatsapp.png"
               alt=""
               className="align-self-center"
               style={{ height: "70px", width: "70px" }}
             />
-            <div class="media-body">
+            <div className="media-body">
               <h6 className="mt-0">Chart with us</h6>
               <p>
                 {" "}
@@ -80,20 +80,21 @@ const ContactUs = () => {
                   href="https://api.whatsapp.com/send?phone=916364708090
       &text=hello from Rst booking"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   +91&nbsp;6364708090
                 </a>
               </p>
             </div>
           </div>
-          <div class="media mt-2">
+          <div className="media mt-2">
             <img
               src="/images/email.png"
               alt=""
               className="align-self-center"
               style={{ height: "70px", width: "70px" }}
             />
-            <div class="media-body">
+            <div className="media-body">
               <h6 className="mt-0">E-mail</h6>
               <p>
                 {" "}

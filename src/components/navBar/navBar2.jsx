@@ -6,21 +6,21 @@ import {
   Nav,
   Navbar,
   NavDropdown,
-  // Dropdown,
+  Dropdown,
   // Form,
   // FormControl,
   // Button,
 } from "react-bootstrap";
 
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
+// import {
+//   // Dropdown,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem,
+// } from "reactstrap";
 
 class NavBar2 extends Component {
-  state = {};
+  // state = {};
 
   preventRefresh = (e) => {
     console.log("nav bar");
@@ -53,11 +53,22 @@ class NavBar2 extends Component {
   }
 
   render() {
+    // console.log("props", this.props.location.pathname);
+    // console.log("props", window.location);
+    // console.log("props", this.props.history);
+    // var p = this.props.location.pathname;
+
+    // const p1 = "/companyprofile";
+    // const p2 = "/ourvision";
+    // console.log("pp", p, p1);
+    // const p3 = this.props.location.pathname;
+
+    // loction.pathname
     return (
       <div className=" fixed-top">
         <NavBar1 />
         <Navbar expand="lg" className="nav-bar2 pt-0 pb-0 p-0 ">
-          <Navbar.Brand href="#home" className=" ml-md-3 ">
+          <Navbar.Brand className=" ml-md-3 ">
             <img
               src="images/rstlog.png"
               alt="rstlog.png"
@@ -65,7 +76,7 @@ class NavBar2 extends Component {
               style={{ width: "60x", height: "70px" }}
             />
             <label
-              htmlFor="label"
+              htmlFor=" RSTBooking"
               className="navbar-brand text-ligh nav-brand-font "
               //     style={{ fontSize: "30px", fontWeight: 600 }}
             >
@@ -102,17 +113,31 @@ class NavBar2 extends Component {
             className="justify-content-end"
           >
             <Nav className="mr-md-4">
-              <Nav.Link>
-                <NavLink exact activeClassName="active" to={"/"}>
-                  {" "}
-                  <i className="fa nav-items ">Home </i>
-                </NavLink>
-              </Nav.Link>
+              {/* <Nav.Link> */}
+              <NavLink
+                exact
+                activeClassName="active"
+                to={"/"}
+                className="nav-items "
+              >
+                {" "}
+                <i className="fa ">Home </i>
+              </NavLink>
+              {/* </Nav.Link> */}
 
               <NavDropdown
-                renderMenuOnMount={true}
-                title=" About Us"
-                id="basic-nav-dropdown"
+                // renderMenuOnMount={true}
+                className=" nav-item"
+                title={
+                  // <NavLink to={"/companyprofile"}>
+
+                  <i activeclassname="active" className="fa nav-items">
+                    About Us
+                  </i>
+                  // </NavLink>
+                }
+                id="basic-nav"
+                // className="fa nav-items "
               >
                 {/* <Dropdown.Item>
                 <Nav.Link href="#link">Our</Nav.Link>{" "}
@@ -122,19 +147,28 @@ class NavBar2 extends Component {
                     exact
                     activeClassName="active"
                     to={"/companyprofile"}
+                    className="nav-items"
                   >
-                    <i className="fa nav-items "> Company profile </i>
+                    <i className="fa  "> Company profile </i>
                   </NavLink>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <NavLink exact activeClassName="active" to={"/ourvision"}>
+                  <NavLink
+                    exact
+                    activeClassName="active"
+                    to={"/ourvision"}
+                    className="nav-items"
+                  >
                     {" "}
-                    <i className="fa nav-items ">Our Vision & Mission</i>
+                    <i className="fa  ">Our Vision & Mission</i>
                   </NavLink>
                 </Dropdown.Item>
               </NavDropdown>
 
-              <NavDropdown title=" Our Product" id="basic-nav-dropdown">
+              <NavDropdown
+                title={<i className="fa nav-items ">Our Product</i>}
+                id="basic-nav-dropdown"
+              >
                 <Dropdown.Item>
                   <NavLink exact activeClassName="active" to={"/mytaxicab"}>
                     <i className="fa nav-items "> My Taxi Cab</i>
@@ -147,18 +181,28 @@ class NavBar2 extends Component {
                 </Dropdown.Item>
               </NavDropdown>
 
-              <Nav.Link>
-                <NavLink exact activeClassName="active" to={"/testimonials"}>
-                  <i className="fa nav-items "> Testimonials</i>
+              <Nav.Item>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  to={"/testimonials"}
+                  className="nav-items"
+                >
+                  <i className="fa  "> Testimonials</i>
                 </NavLink>
-              </Nav.Link>
-              <Nav.Link>
-                <NavLink exact activeClassName="active" to={"/contactus"}>
-                  <i className="fa nav-items "> Contact Us</i>
+              </Nav.Item>
+              <Nav.Item>
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  to={"/contactus"}
+                  className="nav-items"
+                >
+                  <i className="fa  ">&nbsp; Contact Us</i>
                 </NavLink>
-              </Nav.Link>
+              </Nav.Item>
 
-              <Dropdown
+              {/* <Dropdown
                 className="d-inline-block"
                 onMouseOver={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
@@ -173,7 +217,7 @@ class NavBar2 extends Component {
                   <DropdownItem divider />
                   <DropdownItem>Another Action</DropdownItem>
                 </DropdownMenu>
-              </Dropdown>
+              </Dropdown> */}
 
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

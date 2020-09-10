@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
-import CoverPage from "../pages/coverPage";
-import MainPage from "../pages/mainPage";
-import Footer from "../pages/footer";
-import CarService from "./carService";
-import carServiceData from "../../data/carServices";
+import CoverPage from "./pages/coverPage";
+import MainPage from "./pages/mainPage";
+import Footer from "./pages/footer";
+import CarService from "./pages/carService";
+import carServiceData from "../data/carServices";
+// import To from "./tawkto";
 
 class Blog extends Component {
   state = {
@@ -30,7 +31,9 @@ class Blog extends Component {
     return (
       <main style={{ marginTop: "100px" }}>
         <CoverPage />
+
         <MainPage />
+        {/* <To /> */}
         <CarService />
         <Footer />
       </main>

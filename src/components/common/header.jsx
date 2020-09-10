@@ -1,16 +1,14 @@
 import React from "react";
 
 const Header = (data) => {
-  console.log(data.data.title);
-
   return (
     <div>
       <header className="bg-primary text-white  " style={{ height: "177px" }}>
-        <div class="container text-center pt-5 ">
+        <div className="container text-center pt-5 ">
           <h1> {data.data.title} </h1>
           <p>{data.data.subText}</p>
         </div>
-        <div class="container1" style={{ marginTop: "-10px" }}>
+        <div className="container1" style={{ marginTop: "-10px" }}>
           <svg
             viewBox="0 0 500 500"
             preserveAspectRatio="none"

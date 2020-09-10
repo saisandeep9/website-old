@@ -10,8 +10,8 @@ import {
   // Redirect
 } from "react-router-dom";
 
-import Blog from "./components/pages/blog";
-//about us
+import Blog from "./components/blog";
+//about us./components/blog
 import CompanyProfile from "./components/pages/aboutUs/companyprofile";
 import OurVisionMission from "./components/pages/aboutUs/ourVisionMission";
 
@@ -30,8 +30,8 @@ class App extends Component {
     return (
       <div>
         <main>
-          <NavBar2 />
-
+          {/* <NavBar2 /> */}
+          <Route component={NavBar2}></Route>
           <Switch>
             <Route path="/" exact component={Blog} />
             <Route path="/companyprofile" exact component={CompanyProfile} />

@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import Joi from "joi-browser";
+const SPREADSHEET_ID = "1lXXvz1F8i71rk7YwVAjBxzTFvVNmFwlyyVJSEr4Az1Y"; //from the URL of your blank Google Sheet
+const CLIENT_ID =
+  "892818296916-934g40dnmvecddhcqa2ctouda6pfp9np.apps.googleusercontent.com"; //from https://console.developers.google.com/apis/credentials
+const API_KEY = "AIzaSyDNRmFe6MUmweWy5tg0jvz4HPXT5JaFSRI"; //https://console.developers.google.com/apis/credentials
+const SCOPE = "https://www.googleapis.com/auth/spreadsheets";
 
 class Form extends Component {
   state = {
@@ -56,7 +61,9 @@ class Form extends Component {
   };
 
   doSubmit = async () => {
-    // console.log(this.state.data);
+    console.log(this.state.data);
+
+    // const response = await fetch(url, data,{}
   };
   render() {
     const { data } = this.state;

@@ -51,7 +51,11 @@ const coverPage = (props) => {
         <Form />
       </Paper> */}
       <div className="d-none d-md-block" style={{ width: "auto" }}>
-        <Image style={background} responsive src="images/c3.jpg"></Image>
+        <Image
+          style={background}
+          // responsive
+          src="images/c3.jpg"
+        ></Image>
 
         <div style={textStyle}>
           <Form />
