@@ -71,7 +71,7 @@ class NavBar2 extends Component {
           <Navbar.Brand className=" ml-md-3 ">
             <img
               src="images/rstlog.png"
-              alt="rstlog.png"
+              alt="rstlog"
               className="navbar-brand pt-0 pb-0"
               style={{ width: "60x", height: "70px" }}
             />
@@ -113,31 +113,30 @@ class NavBar2 extends Component {
             className="justify-content-end"
           >
             <Nav className="mr-md-4">
-              {/* <Nav.Link> */}
-              <NavLink
+              <Nav.Link
+                as={NavLink}
                 exact
-                activeClassName="active"
+                // activeClassName="active"
                 to={"/"}
                 className="nav-items "
               >
-                {" "}
-                <i className="fa ">Home </i>
-              </NavLink>
-              {/* </Nav.Link> */}
+                {/* <NavLink
+                  exact
+                  activeClassName="active"
+                  to={"/"}
+                  className="nav-items "
+                > */}{" "}
+                <i className="fa  ">Home </i>
+              </Nav.Link>
 
               <NavDropdown
-                // renderMenuOnMount={true}
-                className=" nav-item"
+                className=" nav-items"
                 title={
-                  // <NavLink to={"/companyprofile"}>
-
                   <i activeclassname="active" className="fa nav-items">
                     About Us
                   </i>
-                  // </NavLink>
                 }
                 id="basic-nav"
-                // className="fa nav-items "
               >
                 {/* <Dropdown.Item>
                 <Nav.Link href="#link">Our</Nav.Link>{" "}
@@ -159,13 +158,13 @@ class NavBar2 extends Component {
                     to={"/ourvision"}
                     className="nav-items"
                   >
-                    {" "}
                     <i className="fa  ">Our Vision & Mission</i>
                   </NavLink>
                 </Dropdown.Item>
               </NavDropdown>
 
               <NavDropdown
+                className=" nav-items"
                 title={<i className="fa nav-items ">Our Product</i>}
                 id="basic-nav-dropdown"
               >
@@ -181,26 +180,28 @@ class NavBar2 extends Component {
                 </Dropdown.Item>
               </NavDropdown>
 
-              <Nav.Item>
-                <NavLink
-                  exact
-                  activeClassName="active"
-                  to={"/testimonials"}
-                  className="nav-items"
-                >
-                  <i className="fa  "> Testimonials</i>
-                </NavLink>
-              </Nav.Item>
-              <Nav.Item>
-                <NavLink
-                  exact
-                  activeClassName="active"
-                  to={"/contactus"}
-                  className="nav-items"
-                >
-                  <i className="fa  ">&nbsp; Contact Us</i>
-                </NavLink>
-              </Nav.Item>
+              <Nav.Link
+                as={NavLink}
+                exact
+                activeClassName="active"
+                to={"/testimonials"}
+                className="nav-items"
+              >
+                {/* <NavLink> */}
+                <i className="fa  "> Testimonials</i>
+                {/* </NavLink> */}
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                exact
+                activeClassName="active"
+                to={"/contactus"}
+                className="nav-items"
+              >
+                {/* <NavLink> */}
+                <i className="fa  ">&nbsp; Contact Us</i>
+                {/* </NavLink> */}
+              </Nav.Link>
 
               {/* <Dropdown
                 className="d-inline-block"

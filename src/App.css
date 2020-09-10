@@ -48,7 +48,7 @@ body {
 }
 .nav-items {
   font-size: 20px !important;
-  color: rgb(156, 170, 231);
+  color: rgb(156, 170, 231) !important;
 }
 .nav-bar2 .active {
   color: rgba(245, 8, 8, 0.952) !important;
