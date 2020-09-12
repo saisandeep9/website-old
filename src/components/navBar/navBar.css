@@ -1,0 +1,25 @@
+.nav-bar1 {
+  background-color: #1e1e1e;
+  color: rgb(249, 249, 250);
+  height: 30px !important;
+}
+
+.nav-bar2 {
+  background-color: white;
+  height: 65px;
+}
+
+.nav-items {
+  /* font-size: 20px !important; */
+  font-weight: 500;
+  color: #393185 !important;
+  text-align: center;
+}
+
+.nav-bar2 .active {
+  color: #318531e5 !important;
+}
+.nav-bar2 li {
+  width: 150px;
+  text-align: center;
+}

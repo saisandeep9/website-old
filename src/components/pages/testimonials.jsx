@@ -10,7 +10,7 @@ const Testimonials = () => {
       "A Testimonials landing page template freshly redesigned for Bootstrap",
   };
   return (
-    <div style={{ minHeight: "800px ", marginTop: "80px" }}>
+    <div style={{ minHeight: "800px ", marginTop: "100px" }}>
       {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
         <div class="container text-center pt-5 ">
           <h1>Testimonials</h1>

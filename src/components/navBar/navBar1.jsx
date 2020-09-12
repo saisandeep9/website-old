@@ -1,26 +1,28 @@
 import React from "react";
 // import { NavLink, Link } from "react-router-dom";
+import "./navBar.css";
 
 const NavBar1 = () => {
   return (
     <div className="d-none d-md-block ">
-      <nav className="navbar  navbar-expand-lg nav-bar1 justify-content-center  ">
+      <nav className="navbar  navbar-expand-md nav-bar1 justify-content-center  ">
         <ul className="  navbar-nav  ">
           <li className="nav-item  ">
-            <i className="fa fa-phone " style={{ fontSize: "20px" }}></i>
+            <i className="fa fa-phone " style={{ fontSize: "18px" }}></i>
             &nbsp;&nbsp;
             <a className="text-white" href="tel:5554280940">
               +91&nbsp;8068464799
             </a>
           </li>
-          &nbsp; &nbsp;
+          &nbsp;&nbsp;&nbsp;
           <li className="nav-item  ">
             {/* <i className="fa fa-phone " style={{ fontSize: "20px" }}></i> */}{" "}
-            <img
+            {/* <img
               src="images/whatsapp.png"
               alt="whats App"
-              style={{ width: "30px", height: "30px" }}
-            />{" "}
+              style={{ width: "25px", height: "25px" }}
+            />{" "} */}
+            <i className="fa fa-whatsapp " style={{ fontSize: "18px" }}></i>
             &nbsp;&nbsp;
             <a
               className="text-white"
@@ -32,13 +34,13 @@ const NavBar1 = () => {
               +91&nbsp;6364708090
             </a>
           </li>
-          &nbsp; &nbsp; &nbsp;
+          &nbsp;&nbsp;&nbsp;
           <li className="nav-item ">
             <i
               className="fa fa-envelope-open "
-              style={{ fontSize: "20px" }}
+              style={{ fontSize: "17px" }}
             ></i>{" "}
-            &nbsp; &nbsp;
+            &nbsp;&nbsp;
             <a className="text-white" href="mailto:info@rstbooking.com">
               info@rstbooking.com
             </a>

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 // import { Navbar, Nav, Icon, Dropdown } from "rsuite";
 import NavBar1 from "./navBar1";
+import "./navBar.css";
+
 import {
   Nav,
   Navbar,
@@ -29,28 +31,17 @@ class NavBar2 extends Component {
 
   constructor(props) {
     super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
-    this.state = {
-      dropdownOpen: false,
-    };
+    this.state = { isOpen: false };
   }
 
-  toggle() {
-    this.setState((prevState) => ({
-      dropdownOpen: !prevState.dropdownOpen,
-    }));
-  }
+  handleOpen = () => {
+    console.log(this.state.isOpen);
+    this.setState({ isOpen: true });
+  };
 
-  onMouseEnter() {
-    this.setState({ dropdownOpen: true });
-  }
-
-  onMouseLeave() {
-    this.setState({ dropdownOpen: false });
-  }
+  handleClose = () => {
+    this.setState({ isOpen: false });
+  };
 
   render() {
     // console.log("props", this.props.location.pathname);
@@ -64,6 +55,7 @@ class NavBar2 extends Component {
     // const p3 = this.props.location.pathname;
 
     // loction.pathname
+    console.log(this.state.isOpen);
     return (
       <div className=" fixed-top">
         <NavBar1 />
@@ -73,11 +65,11 @@ class NavBar2 extends Component {
               src="images/rstlog.png"
               alt="rstlog"
               className="navbar-brand pt-0 pb-0"
-              style={{ width: "60x", height: "70px" }}
+              style={{ width: "60x", height: "60px" }}
             />
             <label
               htmlFor=" RSTBooking"
-              className="navbar-brand text-ligh nav-brand-font "
+              className="navbar-brand  nav-brand-font "
               //     style={{ fontSize: "30px", fontWeight: 600 }}
             >
               RST Booking <br />
@@ -93,7 +85,7 @@ class NavBar2 extends Component {
                     src="images/whatsapp.png"
                     alt="whats App"
                     style={{ width: "30px", height: "20px" }}
-                  />{" "}
+                  />
                   &nbsp;
                   <Link
                     to={`"https://api.whatsapp.com/send?phone=916364708090
@@ -130,6 +122,13 @@ class NavBar2 extends Component {
               </Nav.Link>
 
               <NavDropdown
+                onMouseEnter={this.handleOpen}
+                onMouseLeave={this.handleClose}
+                open={this.state.isOpen}
+                // noCaret
+                Open={this.state.dropdownOpen1}
+                toggle={this.toggle1}
+                renderMenuOnMount={true}
                 className=" nav-items"
                 title={
                   <i activeclassname="active" className="fa nav-items">
@@ -169,13 +168,23 @@ class NavBar2 extends Component {
                 id="basic-nav-dropdown"
               >
                 <Dropdown.Item>
-                  <NavLink exact activeClassName="active" to={"/mytaxicab"}>
-                    <i className="fa nav-items "> My Taxi Cab</i>
+                  <NavLink
+                    exact
+                    activeClassName="active"
+                    to={"/mytaxicab"}
+                    className="nav-items"
+                  >
+                    <i className="fa "> My Taxi Cab</i>
                   </NavLink>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <NavLink exact activeClassName="active" to={"/indiantaxis"}>
-                    <i className="fa nav-items "> Indian Taxis</i>
+                  <NavLink
+                    exact
+                    activeClassName="active"
+                    to={"/indiantaxis"}
+                    className="nav-items"
+                  >
+                    <i className="fa  "> Indian Taxis</i>
                   </NavLink>
                 </Dropdown.Item>
               </NavDropdown>

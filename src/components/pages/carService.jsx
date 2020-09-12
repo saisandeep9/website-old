@@ -30,7 +30,7 @@ class CarServices extends Component {
             style={{
               minHeight: "600px",
               width: "100%",
-              backgroundColor: "#DFE3EE",
+              backgroundColor: "	#FFFFFF",
               //   backgroundImage: "url('ceo.jpg')",
               //   marginTop: "-16px",
               paddingTop: "10px",

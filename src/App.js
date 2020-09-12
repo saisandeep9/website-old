@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 import "./App.css";
 // import NavBar1 from "./components/navBar/navBar1";
-import NavBar2 from "./components/navBar/navBar2";
+// import NavBar2 from "./components/navBar/navBar2";
+import NavBar2 from "./components/navBar/navBar3";
 import SideNavBar from "./components/navBar/sideNaveBar";
 import {
   Route,
@@ -14,11 +15,13 @@ import Blog from "./components/blog";
 //about us./components/blog
 import CompanyProfile from "./components/pages/aboutUs/companyprofile";
 import OurVisionMission from "./components/pages/aboutUs/ourVisionMission";
-
+import About from "./components/pages/about";
 //produsts
 import Mytaxicab from "./components/pages/ourProducts/mytaxicab";
 import IndianTaxis from "./components/pages/ourProducts/indianTaxis";
+import OurServices from "./components/pages/ourServices";
 
+import Careers from "./components/pages/careers";
 import Contacts from "./components/pages/contacts";
 
 import Testimonials from "./components/pages/testimonials";
@@ -34,6 +37,10 @@ class App extends Component {
           <Route component={NavBar2}></Route>
           <Switch>
             <Route path="/" exact component={Blog} />
+
+            <Route path="/ourservices" exact component={OurServices} />
+            <Route path="/about" exact component={About} />
+            <Route path="/careers" exact component={Careers} />
             <Route path="/companyprofile" exact component={CompanyProfile} />
             <Route path="/ourvision" exact component={OurVisionMission} />
             <Route path="/contact" exact component={Contacts} />
@@ -43,7 +50,7 @@ class App extends Component {
             <Route path="/contactus" exact component={ContactUs} />
           </Switch>
 
-          <SideNavBar />
+          {/* <SideNavBar /> */}
         </main>
       </div>
     );

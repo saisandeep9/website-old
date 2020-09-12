@@ -1,11 +1,20 @@
 import React from "react";
+import TitleBlock from "../common/titleBlock";
 
 const Header = (data) => {
   return (
     <div>
-      <header className="bg-primary text-white  " style={{ height: "177px" }}>
+      <header
+        className=" text-white  "
+        style={{
+          height: "177px",
+          backgroundColor: "#393185",
+          marginBottom: "80px",
+        }}
+      >
         <div className="container text-center pt-5 ">
           <h1> {data.data.title} </h1>
+          <TitleBlock />
           <p>{data.data.subText}</p>
         </div>
         <div className="container1" style={{ marginTop: "-10px" }}>

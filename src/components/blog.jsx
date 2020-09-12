@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
-import CoverPage from "./pages/coverPage";
+// import CoverPage from "./pages/coverPage";
+import CoverPage from "./pages/covepage2";
 import MainPage from "./pages/mainPage";
-import Footer from "./pages/footer";
+// import Footer from "./pages/footer";
+import Footer from "./pages/footer2";
 import CarService from "./pages/carService";
 import carServiceData from "../data/carServices";
+import Slidee from "../components/pages/slidee";
 // import To from "./tawkto";
 
 class Blog extends Component {
@@ -29,12 +32,13 @@ class Blog extends Component {
 
   render() {
     return (
-      <main style={{ marginTop: "100px" }}>
+      <main style={{ minHeight: "300px", marginTop: "95px" }}>
         <CoverPage />
 
         <MainPage />
-        {/* <To /> */}
+
         <CarService />
+
         <Footer />
       </main>
     );

@@ -8,17 +8,17 @@ const CoverPage2 = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            className=" d-block  "
+            className=" d-block "
             style={{ width: "100%", height: "500px", marginLeft: "0px" }}
             src="images/cp1.jpg"
             alt="First slide"
           />
 
           <Carousel.Caption
-            className="bg-dark"
-            style={{ marginBottom: "150px" }}
+            className=""
+            style={{ marginBottom: "150px", background: "#20201e86" }}
           >
-            <h3>First slide label</h3>
+            <h3>RST Booking</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -31,7 +31,7 @@ const CoverPage2 = () => {
           />
 
           <Carousel.Caption>
-            <h3 className="">Second slide label</h3>
+            <h3 className="">Indian Taxis</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -44,7 +44,7 @@ const CoverPage2 = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>My Taxi Cab</h3>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
