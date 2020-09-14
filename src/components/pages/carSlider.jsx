@@ -89,7 +89,12 @@ class CarSlider extends Component {
     };
 
     return (
-      <div style={{ marginTop: "60px" }}>
+      <div
+        style={{
+          background: "#ffff",
+          paddingBottom: "60px",
+        }}
+      >
         <div className="header">
           <h1>Our Services</h1>
           <div className="title-line" />
@@ -100,6 +105,7 @@ class CarSlider extends Component {
                 {...settings}
                 asNavFor={this.state.nav2}
                 ref={(slider) => (this.slider1 = slider)}
+                dots={true}
               >
                 {/* <Slider > */}
                 <li className="align-self-center">
@@ -176,11 +182,11 @@ class CarSlider extends Component {
                   className=""
                 />
 
-                <div className=" row ">
+                <div className=" row ml-3 ">
                   <p className="text-left h3 ml-3 col-4 ">{d.title}</p>
                   {/* <div className="float-right mr-4"> */}
                   <p className="text-right h4 col-6">
-                    <i className="fa fa-user "></i>&nbsp; Max 3
+                    <i className="fa fa-user "></i>&nbsp;Max: {d.maxPerson}
                   </p>
                   {/* </div> */}
                 </div>

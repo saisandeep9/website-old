@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 // import { Navbar, Nav, Icon, Dropdown } from "rsuite";
 import NavBar1 from "./navBar1";
+import { animateScroll as scroll } from "react-scroll";
 import "./navBar.css";
 
 import {
@@ -59,7 +60,11 @@ class NavBar2 extends Component {
     return (
       <div className=" fixed-top">
         <NavBar1 />
-        <Navbar expand="lg" className="nav-bar2 pt-0 pb-0 p-0 ">
+        <Navbar
+          expand="lg"
+          className="nav-bar2 pt-0 pb-0 p-0  "
+          role="navigation"
+        >
           <Navbar.Brand className=" ml-md-3 ">
             <img
               src="images/rstlog.png"

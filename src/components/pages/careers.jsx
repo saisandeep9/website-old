@@ -5,7 +5,7 @@ import Card from "../common/card";
 import careersdata from "../../data/careersData";
 
 const Careers = () => {
-  const [marketing, setmarketing] = useState(false);
+  const [marketing, setmarketing] = useState(true);
   const [hR, sethR] = useState(false);
   const [technology, settechnology] = useState(false);
   const [products, setproducts] = useState(false);
@@ -58,7 +58,7 @@ const Careers = () => {
                   // className="collapse lists"
                 >
                   {careersdata.marketingdata.map((mrt) => (
-                    <li className="list-inline-item">
+                    <li className="list-inline-item" key={mrt.titel}>
                       <Card data={mrt} />
                     </li>
                   ))}
@@ -75,7 +75,7 @@ const Careers = () => {
               <Collapse in={hR}>
                 <ul className="  list-inline ">
                   {careersdata.humanResourcesdata.map((hr) => (
-                    <li className="list-inline-item">
+                    <li className="list-inline-item" key={hr.titel}>
                       <Card data={hr} />
                     </li>
                   ))}
@@ -92,7 +92,7 @@ const Careers = () => {
               <Collapse in={technology}>
                 <ul className="  list-inline ">
                   {careersdata.technologydata.map((tech) => (
-                    <li className="list-inline-item">
+                    <li className="list-inline-item" key={tech.titel}>
                       <Card data={tech} />
                     </li>
                   ))}
@@ -110,7 +110,7 @@ const Careers = () => {
               <Collapse in={products}>
                 <ul className="  list-inline ">
                   {careersdata.productsdata.map((products) => (
-                    <li className="list-inline-item">
+                    <li className="list-inline-item" key={products.titel}>
                       <Card data={products} />
                     </li>
                   ))}
