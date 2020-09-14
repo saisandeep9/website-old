@@ -167,7 +167,7 @@ class CarSlider extends Component {
 
           {this.state.data.map((d) => (
             <div key={d.carName}>
-              <div className="m-4 cards">
+              <div className="m-4 cards ">
                 <img
                   // className="rounded-circle"
                   alt={"users here"}
@@ -176,16 +176,13 @@ class CarSlider extends Component {
                   className=""
                 />
 
-                <div className=" text-center ">
-                  <h5 className="">{d.title}</h5>
-                  <div className="float-left ml-4">
-                    <h6>
-                      <i className="fa fa-user"></i>&nbsp; Max 3{" "}
-                    </h6>
-                  </div>{" "}
-                  <small className=" text-sm-center text-muted">
-                    In your contacts
-                  </small>
+                <div className=" row ">
+                  <p className="text-left h3 ml-3 col-4 ">{d.title}</p>
+                  {/* <div className="float-right mr-4"> */}
+                  <p className="text-right h4 col-6">
+                    <i className="fa fa-user "></i>&nbsp; Max 3
+                  </p>
+                  {/* </div> */}
                 </div>
               </div>
             </div>
