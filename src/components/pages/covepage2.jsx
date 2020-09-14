@@ -9,7 +9,7 @@ const CoverPage2 = () => {
         <Carousel.Item>
           <img
             className=" d-block "
-            style={{ width: "100%", height: "500px", marginLeft: "0px" }}
+            style={{ width: "100%", height: "500px" }}
             src="images/cp1.jpg"
             alt="First slide"
           />

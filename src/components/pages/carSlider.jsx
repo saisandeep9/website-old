@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carSlider.css";
-import TitleBlock from "../common/titleBlock";
+
 import Slider from "react-slick";
 import carServiceData from "../../data/carServices";
 // import { Link } from "react-router-dom";
@@ -65,9 +65,10 @@ class CarSlider extends Component {
       // arrows: true,
       slidesToShow: 2,
       slidesToScroll: 1,
+      arrows: false,
       // centerMode: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SampleNextArrow />,
+      // nextArrow: <SampleNextArrow />,
+      // prevArrow: <SampleNextArrow />,
 
       responsive: [
         {
@@ -88,10 +89,10 @@ class CarSlider extends Component {
     };
 
     return (
-      <div>
+      <div style={{ marginTop: "60px" }}>
         <div className="header">
           <h1>Our Services</h1>
-          <TitleBlock />
+          <div className="title-line" />
 
           <div className="slider1">
             <ul className="">
@@ -101,10 +102,7 @@ class CarSlider extends Component {
                 ref={(slider) => (this.slider1 = slider)}
               >
                 {/* <Slider > */}
-                <li
-                  className="align-self-center"
-                  onClick={() => select("sedan")}
-                >
+                <li className="align-self-center">
                   <img
                     src="images/cars/sedanic.png"
                     alt=""
@@ -112,7 +110,7 @@ class CarSlider extends Component {
                   />
                 </li>
 
-                <li onClick={() => select("hatchback")}>
+                <li>
                   <img
                     src="images/cars/hatchbackic.png"
                     alt=""
@@ -121,28 +119,28 @@ class CarSlider extends Component {
 
                   {/* <i className="triangle-up"></i> */}
                 </li>
-                <li onClick={() => select("suv")}>
+                <li>
                   <img
                     src="images/cars/suvic.png"
                     alt=""
                     style={{ width: "100px", height: "100px" }}
                   />
                 </li>
-                <li onClick={() => select("tempo")}>
+                <li>
                   <img
                     src="images/cars/tempo.png"
                     alt=""
                     style={{ width: "100px", height: "100px" }}
                   />
                 </li>
-                <li onClick={() => select("auto")}>
+                <li>
                   <img
                     src="images/cars/autoic.png"
                     alt=""
                     style={{ width: "100px", height: "100px" }}
                   />
                 </li>
-                <li onClick={() => select("tataace")}>
+                <li>
                   <img
                     src="images/cars/tataace.png"
                     alt=""
@@ -157,7 +155,10 @@ class CarSlider extends Component {
           asNavFor={this.state.nav1}
           ref={(slider) => (this.slider2 = slider)}
           {...settings}
+          nextArrow={<SampleNextArrow />}
+          prevArrow={<SampleNextArrow />}
           // slidesToShow={2}
+          arrows={true}
           swipeToSlide={true}
           focusOnSelect={true}
           className="slider2"
@@ -171,17 +172,17 @@ class CarSlider extends Component {
                   // className="rounded-circle"
                   alt={"users here"}
                   src={d.img}
-                  height={290}
-                  width={260}
+                  // style={{ height: "290px", width: "290px" }}
                   className=""
                 />
 
-                <div className=" text-center">
+                <div className=" text-center ">
                   <h5 className="">{d.title}</h5>
-                  <h3>
-                    <i className="fa fa-user"></i>{" "}
-                  </h3>
-                  &nbsp;
+                  <div className="float-left ml-4">
+                    <h6>
+                      <i className="fa fa-user"></i>&nbsp; Max 3{" "}
+                    </h6>
+                  </div>{" "}
                   <small className=" text-sm-center text-muted">
                     In your contacts
                   </small>

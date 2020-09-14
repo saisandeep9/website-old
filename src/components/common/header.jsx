@@ -1,5 +1,4 @@
 import React from "react";
-import TitleBlock from "../common/titleBlock";
 
 const Header = (data) => {
   return (
@@ -7,41 +6,48 @@ const Header = (data) => {
       <header
         className=" text-white  "
         style={{
-          height: "177px",
+          height: "200px",
           backgroundColor: "#393185",
-          marginBottom: "80px",
+          // marginBottom: "40px",
         }}
       >
-        <div className="container text-center pt-5 ">
+        <div className="container text-center  " style={{ padding: "50px 0" }}>
           <h1> {data.data.title} </h1>
-          <TitleBlock />
+          <div className="title-line" />
           <p>{data.data.subText}</p>
         </div>
-        <div className="container1" style={{ marginTop: "-10px" }}>
-          <svg
-            viewBox="0 0 500 500"
-            preserveAspectRatio="none"
-            style={{ zIndex: "-2" }}
-          >
-            <path
-              d="M0, 100 C150, 200 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
-
-            <path
-              d="M0, 80 C300, 0 400,  
-                300 500, 50 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
-            <path
-              d="M0, 100 C150, 300 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#183fee80" }}
-            ></path>
-          </svg>
-        </div>
       </header>
+    </div>
+  );
+};
+
+const HeaderWave = () => {
+  return (
+    <div>
+      <div className="container1" style={{ marginTop: "-10px" }}>
+        <svg
+          viewBox="0 0 500 500"
+          preserveAspectRatio="none"
+          style={{ zIndex: "-2" }}
+        >
+          <path
+            d="M0, 100 C150, 200 350, 
+        0 500, 100 L500, 00 L0, 0 Z"
+            style={{ stroke: "none", fill: "#1c18ee57" }}
+          ></path>
+
+          <path
+            d="M0, 80 C300, 0 400,  
+        300 500, 50 L500, 00 L0, 0 Z"
+            style={{ stroke: "none", fill: "#1c18ee57" }}
+          ></path>
+          <path
+            d="M0, 100 C150, 300 350, 
+        0 500, 100 L500, 00 L0, 0 Z"
+            style={{ stroke: "none", fill: "#183fee80" }}
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 };

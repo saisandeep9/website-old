@@ -7,7 +7,8 @@ import MainPage from "./pages/mainPage";
 import Footer from "./pages/footer2";
 import CarService from "./pages/carService";
 import carServiceData from "../data/carServices";
-import Slidee from "../components/pages/slidee";
+import CarSlider from "../components/pages/carSlider";
+import Testimonials from "../components/pages/testimonials";
 // import To from "./tawkto";
 
 class Blog extends Component {
@@ -36,8 +37,10 @@ class Blog extends Component {
         <CoverPage />
 
         <MainPage />
+        <CarSlider />
+        <Testimonials />
 
-        <CarService />
+        {/* <CarService /> */}
 
         <Footer />
       </main>

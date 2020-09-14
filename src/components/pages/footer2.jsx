@@ -5,10 +5,7 @@ import Link from "@material-ui/core/Link";
 function Copyright() {
   return (
     <div className="text-secondary">
-      {"Copyright ©  RST"} {new Date().getFullYear()}. &nbsp;
-      {/* <Link color="inherit" href="https://material-ui.com/"> */}
-      All Right Reserved
-      {/* </Link>{" "} */}
+      {"Copyright ©  RST"} {new Date().getFullYear()}.&nbsp;All Right Reserved.
     </div>
   );
 }
@@ -41,14 +38,9 @@ const Footer = () => {
 
       <div
         style={{
-          height: "40px",
           fontSize: "15px",
-          background: "#1e1e1e",
-          // bottom: 0,
-          width: "100%",
-
-          //   paddingLeft: "10px",
-          paddingTop: "10px",
+          background: "#0e0e0e",
+          padding: "22px 0",
         }}
       >
         <Copyright />

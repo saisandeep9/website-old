@@ -10,7 +10,7 @@ const Testimonials = () => {
       "A Testimonials landing page template freshly redesigned for Bootstrap",
   };
   return (
-    <div style={{ minHeight: "800px ", marginTop: "100px" }}>
+    <div style={{ minHeight: "700px ", background: "#ffff" }}>
       {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
         <div class="container text-center pt-5 ">
           <h1>Testimonials</h1>
@@ -42,7 +42,7 @@ const Testimonials = () => {
         </div>
       </header> */}
       <Header data={data} />
-      <Carousel className="" style={{ marginTop: "60px" }}>
+      <Carousel className=" m-3">
         <Carousel.Item>
           {/* <img
                     className="d-block"
@@ -56,7 +56,7 @@ const Testimonials = () => {
                   /> */}
 
           <div
-            className="card box w-75"
+            className=" w-75"
             style={{
               height: "350px",
               // width: "70%",
@@ -102,7 +102,7 @@ const Testimonials = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div
-            className="card box w-75"
+            className="  w-75"
             style={{
               height: "350px",
               // width: "80%",
@@ -160,7 +160,7 @@ const Testimonials = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div
-            className="card box"
+            className=" "
             style={{
               height: "450px",
               width: "80%",

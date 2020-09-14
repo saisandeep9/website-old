@@ -64,6 +64,13 @@ body {
   cursor: pointer;
 }
 
+.title-line {
+  width: 60px;
+  height: 2px;
+  margin: 5px auto 20px auto;
+  background: #ffff;
+}
+
 /* side nave bar  */
 /* 
 #sidenav a {
