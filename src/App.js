@@ -17,13 +17,13 @@ import CompanyProfile from "./components/pages/aboutUs/companyprofile";
 import OurVisionMission from "./components/pages/aboutUs/ourVisionMission";
 import About from "./components/pages/about";
 //produsts
-import Mytaxicab from "./components/pages/ourProducts/mytaxicab";
-import IndianTaxis from "./components/pages/ourProducts/indianTaxis";
+import Mytaxicab from "./components/pages/ourServices/mytaxicab";
+import IndianTaxis from "./components/pages/ourServices/indianTaxis";
 import OurServices from "./components/pages/ourServices";
 
 import Careers from "./components/pages/careers";
 import Contacts from "./components/pages/contacts";
-
+import Footer from "./components/pages/footer2";
 import Testimonials from "./components/pages/testimonials";
 import ContactUs from "./components/pages/contactUs";
 
@@ -49,7 +49,7 @@ class App extends Component {
             <Route path="/testimonials" exact component={Testimonials} />
             <Route path="/contactus" exact component={ContactUs} />
           </Switch>
-
+          <Footer />
           {/* <SideNavBar /> */}
         </main>
       </div>

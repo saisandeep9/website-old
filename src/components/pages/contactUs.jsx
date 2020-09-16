@@ -125,10 +125,6 @@ const ContactUs = () => {
           tabindex: "0",
         }}
       ></iframe> */}
-
-      <div className="mt-5">
-        <Footer />
-      </div>
     </div>
   );
 };

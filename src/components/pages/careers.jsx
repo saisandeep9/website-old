@@ -16,22 +16,24 @@ const Careers = () => {
   };
 
   return (
-    <div style={{ minHeight: "700px", marginTop: "80px" }}>
+    <div
+      style={{
+        minHeight: "700px",
+        marginTop: "80px",
+      }}
+    >
       <Header data={data} />
 
       <section
         id="careers"
         style={{
-          // minHeight: "600px",
-          // marginTop: "60px",
+          marginTop: "50px",
           width: "100%",
-          //   minBlockSize: "100% 400px",
+
           paddingTop: "53px",
-          backgroundColor: "#ffff",
+          paddingBottom: "60px",
         }}
       >
-        {/* list-unstyled  */}
-
         <div
           className=" text-left "
           // style={{ marginLeft: "40px" }}

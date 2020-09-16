@@ -1,4 +1,5 @@
 import React from "react";
+import "./footer.css";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 
@@ -14,33 +15,125 @@ const Footer = () => {
   var styel = {
     color: "white",
     background: "#252525",
-    minHeight: "300px",
+    minHeight: "345px",
   };
   return (
-    <footer className="text-center" style={styel}>
-      <div className="row" style={{ height: "260px" }}>
-        <div className="col-md-4"></div>
-        <div className="col-md-4"></div>
-        <div className="col-md-4">
-          <h4 className="mt-3 text-light">Social Media</h4>
-          <hr />
-          <h2 className="text-secondary">
-            <i className="fa fa-facebook-square m-2 socialMedia"></i>{" "}
-            <i className="fa fa-instagram m-2 socialMedia"></i>
-            <i className="fa fa-twitter m-2 socialMedia"></i>
+    <footer className="footer  " style={styel}>
+      <div className="contai ">
+        <div
+          className=" justify-content-center row  "
+          style={{ height: "295px" }}
+        >
+          <div className="col-md-3 text-left  ">
+            <h3 className="   limoking-widget-title">About</h3>
+            <div className="title-line-footer"></div>
+            <img
+              src="images/rstlog.png"
+              style={{ width: "70px", height: "70px" }}
+              alt=""
+            />
+            <p className="mt-2">
+              some text about the RST booking some text about the RST booking{" "}
+              some text about the RST booking some text about the RST booking
+            </p>
+          </div>
+          <div className="col-md-2  text-left">
+            <h3 className="   limoking-widget-title">contact</h3>
+            <div className="title-line-footer"></div>
+            <label htmlFor="">
+              <i
+                class=" text-light fa fa-map-marker"
+                style={{
+                  verticalAlign: "middle",
+                  color: "#fff",
+                  fontSize: "20px",
+                }}
+              >
+                {" "}
+              </i>
+              &nbsp;&nbsp;11th A cross, Kodichikkanahalli Main Rd, Bommanahalli,
+              Bengaluru, Karnataka 560068
+            </label>
+            <label htmlFor="">
+              <i
+                className="fa fa-phone"
+                style={{
+                  verticalAlign: "middle",
+                  color: "#fff",
+                  fontSize: "20px",
+                }}
+              ></i>
+              &nbsp; +91&nbsp;29232393
+            </label>
             <br />
-            <i className="fa fa-linkedin m-2 socialMedia"></i>
-            <i className="fa fa-youtube m-2 socialMedia"></i>
-            <i className="fa fa-telegram m-2 socialMedia"></i>
-          </h2>
+            <label htmlFor="">
+              <i
+                className="limoking-icon fa fa-mobile"
+                style={{
+                  verticalAlign: "middle",
+                  color: "#fff",
+                  fontSize: "25px",
+                }}
+              ></i>
+              &nbsp; (+91) 343954395
+            </label>
+            <br />
+            <label htmlFor="">
+              <i
+                className="limoking-icon fa fa-envelope-o"
+                style={{
+                  // verticalAlign: "middle",
+                  color: "#fff",
+                  fontSize: "16px",
+                }}
+              ></i>
+              &nbsp; indiantaxis@gmail.com
+            </label>
+          </div>
+          <div className="col-md-2 text-left">
+            <h3 className="   limoking-widget-title">our services</h3>
+            <div className="title-line-footer"></div>
+            <label htmlFor="">Indian Taxis</label>
+            <br />
+            <img
+              src="images/googlePaly.png"
+              alt=""
+              style={{ height: "80px", width: "200px" }}
+            />
+            <br />
+            <label htmlFor="">My Taxis Cab</label>
+            <br />
+            <i class="fa fa-google-play "> </i>
+            {/* <img
+              src="images/googlePaly.png"
+              alt=""
+              style={{ height: "80px", width: "200px" }}
+            /> */}
+          </div>
+          <div className="col-md-2">
+            <h3 className=" text-light text-left limoking-widget-title">
+              connect with us
+            </h3>
+            <div className="title-line-footer"></div>
+
+            <h2 className="text-secondary text-left">
+              <i className="fa fa-facebook-square m-2 socialMedia"></i>{" "}
+              <i className="fa fa-instagram m-2 socialMedia"></i>
+              <i className="fa fa-twitter m-2 socialMedia"></i>
+              <br />
+              <i className="fa fa-linkedin m-2 socialMedia"></i>
+              <i className="fa fa-youtube m-2 socialMedia"></i>
+              <i className="fa fa-telegram m-2 socialMedia"></i>
+            </h2>
+          </div>
         </div>
       </div>
-
       <div
+        className="text-center"
         style={{
           fontSize: "15px",
           background: "#0e0e0e",
-          padding: "22px 0",
+          padding: "15px 0",
         }}
       >
         <Copyright />

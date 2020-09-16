@@ -1,3 +1,8 @@
+:root {
+  --rstlog-color: #393185;
+  --nav1-color: #1e1e1e;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +37,7 @@ body {
 .nav-brand-font {
   font-size: 25px !important;
   font-weight: 500;
-  color: #393185 !important;
+  color: var(--rstlog-color) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -169,4 +174,14 @@ svg {
   overflow: hidden;
   /* top: 0;
   left: 0; */
+}
+
+blockquote {
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: -30px;
+}
+
+blockquote h3 {
+  font-size: 21px;
 }

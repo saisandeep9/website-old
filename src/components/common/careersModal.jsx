@@ -25,7 +25,7 @@ class CareersModal extends Component {
             <h4>Responsibilities</h4>
             <ul>
               {props.data.responsibilities.map((r) => (
-                <li>{r}</li>
+                <li key={r}>{r}</li>
               ))}
             </ul>
 

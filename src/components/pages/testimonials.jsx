@@ -10,216 +10,129 @@ const Testimonials = () => {
       "A Testimonials landing page template freshly redesigned for Bootstrap",
   };
   return (
-    <div style={{ minHeight: "700px ", background: "#ffff" }}>
-      {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
-        <div class="container text-center pt-5 ">
-          <h1>Testimonials</h1>
-          <p>A landing page template freshly redesigned for Bootstrap 4</p>
-        </div>
-        <div class="container1" style={{ marginTop: "-8px" }}>
-          <svg
-            viewBox="0 0 500 500"
-            preserveAspectRatio="none"
-            style={{ zIndex: "-2" }}
-          >
-            <path
-              d="M0, 100 C150, 200 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
+    <div className="testimonials" style={{ minHeight: "440px " }}>
+      <Carousel
+        className="   "
+        style={{
+          height: "440px",
 
-            <path
-              d="M0, 80 C300, 0 400,  
-                300 500, 50 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
-            <path
-              d="M0, 100 C150, 300 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#183fee80" }}
-            ></path>
-          </svg>
-        </div>
-      </header> */}
-      <Header data={data} />
-      <Carousel className=" m-3">
+          margin: "auto",
+        }}
+      >
         <Carousel.Item>
-          {/* <img
-                    className="d-block"
-                    style={{
-                      width: "80%",
-                      height: "550px",
-                      marginLeft: "70px",
-                    }}
-                    src="cp1.jpg"
-                    alt="First slide"
-                  /> */}
-
           <div
-            className=" w-75"
             style={{
-              height: "350px",
-              // width: "70%",
-              // marginLeft: "90px",
-              margin: "auto",
               marginTop: "5px",
               marginBottom: "5px",
               paddingBottom: "20px",
+              paddingTop: "40px",
             }}
           >
-            <h3 className="mt-1 text-center">Testimonials 1</h3>
-
-            {/* <i class="fa fa-quote-left  "> </i> */}
-
-            <p
-              className=" text-muted mt-2   "
-              style={{
-                fontSize: "17px",
-                width: "80%",
-                margin: "0 auto 0 auto",
-              }}
-            >
+            <h3 className="mt-1 mb-2 text-light text-center">Testimonials 1</h3>
+            <div className="title-line"></div>
+            <div className="text-light">
               {" "}
-              This is text from the testimonials this is text from the
-              testimonialsthis is text from the testimonials This is text from
-              the testimonials this is text from the testimonialsthis is text
-              from the testimonials{" "}
-            </p>
-            <br />
-            <img
-              className="m-  "
-              style={{
-                width: "300px",
-                height: "150px",
-                margin: "0 auto 10px auto",
-              }}
-              src="images/1.jpg"
-              alt="First slide"
-            />
+              <p
+                className=" text-center     "
+                style={{
+                  fontSize: "17px",
+                  width: "60%",
+                  marginRight: "auto",
+                  marginLeft: "auto",
+                }}
+              >
+                <span className="qt-open">“</span>
+                This is text from the testimonials this is text from the
+                testimonialsthis is text from the testimonials This is text from
+                the testimonialsthis is text from the testimonials{" "}
+                <span className="qt-close ">”</span>
+              </p>
+            </div>
+            <div
+              className="text-center "
+              style={
+                {
+                  // margin: "0 auto 0px auto",
+                }
+              }
+            >
+              <img
+                className="  "
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  borderRadius: "100%",
+                  marginTop: "50px",
+                }}
+                src="user1.png"
+                alt="First slide"
+              />
+              <p className="text-light mt-2 ">
+                {" "}
+                name of the the person
+                <br />
+                <small className="text-light">user </small>
+              </p>
+            </div>
           </div>
-
-          {/* <Carousel.Caption className="mb-3"></Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <div
-            className="  w-75"
             style={{
-              height: "350px",
-              // width: "80%",
-              // marginLeft: "90px",
-              margin: "auto",
               marginTop: "5px",
               marginBottom: "5px",
               paddingBottom: "20px",
+              paddingTop: "40px",
             }}
           >
-            <h3 className="mt-1 text-center">Testimonials 2</h3>
-            <p
-              className=" text-muted mt-2  "
-              style={{
-                fontSize: "20px",
-                width: "70%",
-                margin: "auto",
-              }}
-            >
+            <h3 className="mt-1 mb-2 text-light text-center">Testimonials 1</h3>
+            <div className="title-line"></div>
+            <div className="text-light">
               {" "}
-              This is text from the testimonials this is text from the
-              testimonialsthis is text from the testimonials This is text from
-              the testimonials this is text from the testimonialsthis is text
-              from the testimonials{" "}
-            </p>
-
-            <img
-              style={{
-                width: "200px",
-                height: "100px",
-                margin: "auto",
-              }}
-              src="cp2.jpg"
-              alt="First slide"
-            />
-          </div>
-
-          {/* <img
-                    className="d-block "
-                    style={{
-                      width: "80%",
-                      height: "550px",
-                      marginLeft: "70px",
-                    }}
-                    src="cp2.jpg"
-                    alt="Second slide"
-                  /> */}
-
-          {/* <Carousel.Caption>
-                    <h3 className="">Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <div
-            className=" "
-            style={{
-              height: "450px",
-              width: "80%",
-              // marginLeft: "90px",
-              margin: "auto",
-              marginTop: "5px",
-              marginBottom: "5px",
-              paddingBottom: "20px",
-            }}
-          >
-            <h3 className="mt-1 text-center">Testimonials 3 </h3>
-
-            <p
-              className=" text-muted mt-3"
-              style={{
-                fontSize: "20px",
-                width: "70%",
-                margin: "auto",
-              }}
+              <p
+                className=" text-center     "
+                style={{
+                  fontSize: "17px",
+                  width: "60%",
+                  marginRight: "auto",
+                  marginLeft: "auto",
+                }}
+              >
+                <span className="qt-open">“</span>
+                This is text from the testimonials this is text from the
+                testimonialsthis is text from the testimonials This is text from
+                the testimonialsthis is text from the testimonials{" "}
+                <span className="qt-close ">”</span>
+              </p>
+            </div>
+            <div
+              className="text-center "
+              style={
+                {
+                  // margin: "0 auto 0px auto",
+                }
+              }
             >
-              {" "}
-              This is text from the testimonials this is text from the
-              testimonialsthis is text from the testimonials This is text from
-              the testimonials this is text from the testimonialsthis is text
-              from the testimonials{" "}
-            </p>
-
-            <img
-              style={{
-                width: "200px",
-                height: "100px",
-                margin: "auto",
-              }}
-              src="cp3.jpg"
-              alt="First slide"
-            />
+              <img
+                className="  "
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  borderRadius: "100%",
+                  marginTop: "50px",
+                }}
+                src="/user2.png"
+                alt="First slide"
+              />
+              <p className="text-light mt-2 ">
+                {" "}
+                name of the the person
+                <br />
+                <small className="text-light">user </small>
+              </p>
+            </div>
           </div>
-
-          {/* <img
-                    className="d-block "
-                    style={{
-                      width: "80%",
-                      height: "550px",
-                      marginLeft: "70px",
-                    }}
-                    src="cp3.jpg"
-                    alt="Third slide"
-                  /> */}
-
-          {/* <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption> */}
         </Carousel.Item>
-
-        {/* <span class="sr-only">Previous</span> */}
       </Carousel>
     </div>
   );

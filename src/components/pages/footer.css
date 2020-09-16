@@ -1,0 +1,22 @@
+.limoking-widget-title {
+  /* margin-bottom: 25px; */
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.title-line-footer {
+  width: 20px;
+  height: 2px;
+  margin: 15px auto 20px 0;
+  background: #ffff;
+}
+
+.footer {
+  color: gray !important;
+  font-size: 14px;
+}

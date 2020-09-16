@@ -51,14 +51,18 @@ class NavBar2 extends Component {
                 </NavLink>
               </li>
 
-              <li className=" ">
-                <NavLink
+              <li
+                className="nav-link nav-items nav-menu-item "
+                style={{ cursor: "pointer" }}
+              >
+                {/* <NavLink
                   exact
                   to={"/ourservices"}
-                  className=" nav-link nav-items  "
-                >
-                  Our Services
-                </NavLink>
+                  className=" nav-link nav-items nav-menu-item "
+                > */}
+                Our Services
+                <Submenu />
+                {/* </NavLink> */}
               </li>
               <li className=" ">
                 <NavLink
@@ -78,3 +82,30 @@ class NavBar2 extends Component {
 }
 
 export default NavBar2;
+
+class Submenu extends React.Component {
+  render() {
+    return (
+      <ul className=" nav__submenu">
+        <li className=" nav-items ">
+          <NavLink
+            exact
+            to={"/indiantaxis"}
+            className="nav__submenu-item nav-link "
+          >
+            Indian Taxis
+          </NavLink>
+        </li>
+        <li className=" nav-items">
+          <NavLink
+            exact
+            to={"/mytaxicab"}
+            className="nav__submenu-item nav-link "
+          >
+            My Taxi Cab
+          </NavLink>
+        </li>
+      </ul>
+    );
+  }
+}

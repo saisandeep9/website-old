@@ -1,5 +1,5 @@
 .nav-bar1 {
-  background-color: #1e1e1e;
+  background-color: var(--nav1-color);
   color: rgb(249, 249, 250);
   height: 30px !important;
 }
@@ -7,6 +7,9 @@
 .nav-bar2 {
   background-color: white;
   height: 65px;
+}
+.scroll {
+  background-color: red !important;
 }
 
 .nav-bar2.scrolled {
@@ -21,9 +24,47 @@
 }
 
 .nav-bar2 .active {
-  color: #318531e5 !important;
+  color: #20201e !important;
 }
 .nav-bar2 li {
   width: 150px;
   text-align: center;
 }
+
+.nav-bar2 .nav-items:hover {
+  color: #20201e !important;
+}
+
+.nav__submenu {
+  display: none;
+}
+
+.nav-menu-item:hover .nav__submenu {
+  display: block;
+}
+
+.nav__submenu {
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 17px;
+  /* text-transform: none; */
+  display: none;
+  position: absolute;
+
+  list-style: none;
+  width: 150px;
+
+  background-color: white;
+}
+
+.nav__submenu-item {
+  text-align: left !important;
+  margin-left: -20px;
+  color: var(--rstlog-color) !important;
+}
+
+/* .nav__submenu-item:hover {
+  color: var(--nav1-color);
+} */

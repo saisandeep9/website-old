@@ -4,11 +4,12 @@ import React, { Component } from "react";
 import CoverPage from "./pages/covepage2";
 import MainPage from "./pages/mainPage";
 // import Footer from "./pages/footer";
-import Footer from "./pages/footer2";
+// import Footer from "./pages/footer2";
 import CarService from "./pages/carService";
 import carServiceData from "../data/carServices";
 import CarSlider from "../components/pages/carSlider";
 import Testimonials from "../components/pages/testimonials";
+// import Testimonials from "../components/pages/testimonials1";
 // import To from "./tawkto";
 
 class Blog extends Component {
@@ -41,8 +42,8 @@ class Blog extends Component {
         <Testimonials />
 
         {/* <CarService /> */}
-
-        <Footer />
+        {/* 
+        <Footer /> */}
       </main>
     );
   }

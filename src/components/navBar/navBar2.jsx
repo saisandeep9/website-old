@@ -35,6 +35,22 @@ class NavBar2 extends Component {
     this.state = { isOpen: false };
   }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY > 20) {
+      document.querySelector(".nav-bar2").className = "nav-bar2 scroll";
+    } else {
+      document.querySelector(".nav-bar2").className = "nav-bar2";
+    }
+  };
+
   handleOpen = () => {
     console.log(this.state.isOpen);
     this.setState({ isOpen: true });

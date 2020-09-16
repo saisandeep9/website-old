@@ -12,7 +12,12 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#20201e" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "#20201e",
+        color: "red",
+      }}
       onClick={onClick}
     />
   );
@@ -55,7 +60,7 @@ class CarSlider extends Component {
   }
 
   render() {
-    const { select } = this.props;
+    // const { select } = this.props;
     let settings = {
       infinite: true,
       autoplay: true,
@@ -92,7 +97,8 @@ class CarSlider extends Component {
       <div
         style={{
           background: "#ffff",
-          paddingBottom: "60px",
+          paddingBottom: "56px",
+          marginBottom: "-16px",
         }}
       >
         <div className="header">
@@ -185,8 +191,9 @@ class CarSlider extends Component {
                 <div className=" row ml-3 ">
                   <p className="text-left h3 ml-3 col-4 ">{d.title}</p>
                   {/* <div className="float-right mr-4"> */}
-                  <p className="text-right h4 col-6">
-                    <i className="fa fa-user "></i>&nbsp;Max: {d.maxPerson}
+                  <p className="text-right text-dark h6 col-6">
+                    <i className="fa fa-user "></i>&nbsp;&nbsp;&nbsp;Max:{" "}
+                    {d.maxPerson}
                   </p>
                   {/* </div> */}
                 </div>

@@ -16,15 +16,12 @@ const Header = (data) => {
           <div className="title-line" />
           <p>{data.data.subText}</p>
         </div>
-      </header>
-    </div>
-  );
-};
 
-const HeaderWave = () => {
-  return (
-    <div>
-      <div className="container1" style={{ marginTop: "-10px" }}>
+        {/* ........... */}
+
+        {/* ................... */}
+      </header>
+      <div className="container1" style={{ marginTop: "-50px" }}>
         <svg
           viewBox="0 0 500 500"
           preserveAspectRatio="none"
@@ -51,5 +48,9 @@ const HeaderWave = () => {
     </div>
   );
 };
+
+// const HeaderWave = () => {
+//   return <div></div>;
+// };
 
 export default Header;
