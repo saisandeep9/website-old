@@ -21,28 +21,29 @@ const Footer = () => {
     <footer className="footer  " style={styel}>
       <div className="contai ">
         <div
-          className=" justify-content-center row  "
+          className=" justify-content-center row   "
           style={{ height: "295px" }}
         >
-          <div className="col-md-3 text-left  ">
+          <div className="col-md-3 text-left m-2 ">
             <h3 className="   limoking-widget-title">About</h3>
             <div className="title-line-footer"></div>
-            <img
-              src="images/rstlog.png"
-              style={{ width: "70px", height: "70px" }}
-              alt=""
-            />
+
             <p className="mt-2">
               some text about the RST booking some text about the RST booking{" "}
               some text about the RST booking some text about the RST booking
             </p>
+            <img
+              src="images/rstlog.png"
+              style={{ width: "50px", height: "50px" }}
+              alt=""
+            />
           </div>
-          <div className="col-md-2  text-left">
+          <div className="col-md-2  text-left m-2">
             <h3 className="   limoking-widget-title">contact</h3>
             <div className="title-line-footer"></div>
             <label htmlFor="">
               <i
-                class=" text-light fa fa-map-marker"
+                className=" text-light fa fa-map-marker"
                 style={{
                   verticalAlign: "middle",
                   color: "#fff",
@@ -90,27 +91,35 @@ const Footer = () => {
               &nbsp; indiantaxis@gmail.com
             </label>
           </div>
-          <div className="col-md-2 text-left">
+          <div className="col-md-2 text-left m-2">
             <h3 className="   limoking-widget-title">our services</h3>
             <div className="title-line-footer"></div>
-            <label htmlFor="">Indian Taxis</label>
+            <div className="media">
+              <div className="media-body">
+                <label htmlFor="" style={{ color: "white" }}>
+                  Indian Taxis
+                </label>
+
+                <p>For Users</p>
+              </div>
+              <img
+                src="images/playstore.png"
+                alt=""
+                style={{ height: "40px", width: "60px" }}
+              />
+            </div>
+
+            <hr />
+            <label htmlFor="">My Taxi Cab</label>
             <br />
+            {/* <i class="fa fa-google-play "> </i> */}
             <img
-              src="images/googlePaly.png"
+              src="images/playstore.png"
               alt=""
-              style={{ height: "80px", width: "200px" }}
+              style={{ height: "40px", width: "60px" }}
             />
-            <br />
-            <label htmlFor="">My Taxis Cab</label>
-            <br />
-            <i class="fa fa-google-play "> </i>
-            {/* <img
-              src="images/googlePaly.png"
-              alt=""
-              style={{ height: "80px", width: "200px" }}
-            /> */}
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 m-2">
             <h3 className=" text-light text-left limoking-widget-title">
               connect with us
             </h3>

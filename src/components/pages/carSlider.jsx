@@ -9,35 +9,52 @@ import carServiceData from "../../data/carServices";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
+
   return (
     <div
       className={className}
       style={{
         ...style,
         display: "block",
-        background: "#20201e",
-        color: "red",
+
+        fontSize: "60px",
+        height: "80px",
+        width: "80px",
+        color: "var(--rstlog-color)",
+        right: "-100px",
       }}
       onClick={onClick}
-    />
+    >
+      <i className="fa fa-angle-right"></i>
+    </div>
   );
 }
 
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
 
-//         background: "#393185",
-//         color: "black",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
+        // background: "#393185",
+        // color: "black",
+        display: "block",
+
+        fontSize: "60px",
+        height: "80px",
+        width: "80px",
+        left: "-100px",
+        color: "var(--rstlog-color)",
+      }}
+      onClick={onClick}
+    >
+      {" "}
+      <i class="fa fa-angle-left"></i>
+    </div>
+  );
+}
 
 class CarSlider extends Component {
   state = {
@@ -168,7 +185,7 @@ class CarSlider extends Component {
           ref={(slider) => (this.slider2 = slider)}
           {...settings}
           nextArrow={<SampleNextArrow />}
-          prevArrow={<SampleNextArrow />}
+          prevArrow={<SamplePrevArrow />}
           // slidesToShow={2}
           arrows={true}
           swipeToSlide={true}

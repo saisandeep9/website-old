@@ -9,8 +9,8 @@ const CoverPage2 = () => {
         <Carousel.Item>
           <img
             className=" d-block "
-            style={{ width: "100%", height: "500px" }}
-            src="images/cp1.jpg"
+            style={{ width: "100%", height: "600px" }}
+            src="images/1.jpg"
             alt="First slide"
           />
 
@@ -25,8 +25,8 @@ const CoverPage2 = () => {
         <Carousel.Item>
           <img
             className="d-block "
-            style={{ width: "100%", height: "500px" }}
-            src="images/cp2.jpg"
+            style={{ width: "100%", height: "600px" }}
+            src="1.jpg"
             alt="Second slide"
           />
 
@@ -38,7 +38,7 @@ const CoverPage2 = () => {
         <Carousel.Item>
           <img
             className="d-block "
-            style={{ width: "100%", height: "500px", marginLeft: "0px" }}
+            style={{ width: "100%", height: "600px", marginLeft: "0px" }}
             src="images/cp3.jpg"
             alt="Third slide"
           />

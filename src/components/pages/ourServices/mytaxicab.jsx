@@ -3,7 +3,7 @@ import Header from "../../common/header";
 
 const Mytaxicab = () => {
   const data = {
-    title: "My taxi cab",
+    title: "My Taxi Cab",
     subText:
       "A My taxi cab landing page template freshly redesigned for Bootstrap",
   };

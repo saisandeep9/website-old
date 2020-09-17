@@ -14,12 +14,56 @@ import {
 } from "react-bootstrap";
 
 class NavBar2 extends Component {
-  state = {};
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // }
+
+  // handleScroll = () => {
+  //   if (window.scrollY > 800) {
+  //     document.querySelector(".nav-bar2").className = "nav-bar2 scroll";
+  //   } else {
+  //     document.querySelector(".nav-bar2").className = "nav-bar2";
+  //   }
+  // };
+
+  state = {
+    style: {
+      background: "white",
+    },
+  };
+
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 400) {
+      this.setState({
+        style: {
+          boxShadow: "0px 0px 5px 2px #20201e",
+          background: "#E7E7E7",
+          // background: "#20201e86",
+        },
+      });
+    } else {
+      this.setState({ style: { background: "white" } });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
+
   render() {
+    console.log(this.state.style);
     return (
       <div className=" fixed-top">
         <NavBar1 />
-        <Navbar expand="md" className="navbar nav-bar2 ">
+        <Navbar
+          expand="md"
+          className="navbar nav-bar2 "
+          style={this.state.style}
+        >
           <div className="navbar-brand">
             <img
               src="images/rstlog.png"
