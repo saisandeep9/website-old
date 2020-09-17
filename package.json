@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
+    "glyphicons": "^0.2.0",
     "google-maps-react": "^2.0.6",
     "joi-browser": "^13.4.0",
     "node-sass": "^4.14.1",
@@ -46,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/icons-fa-brands": "^1.0.14",
+    "@iconify/react": "^1.1.3"
   }
 }

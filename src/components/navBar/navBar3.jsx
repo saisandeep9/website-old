@@ -57,11 +57,11 @@ class NavBar2 extends Component {
   render() {
     console.log(this.state.style);
     return (
-      <div className=" fixed-top">
+      <div className=" fixed-top  ">
         <NavBar1 />
         <Navbar
           expand="md"
-          className="navbar nav-bar2 "
+          className="navbar nav-bar2  "
           style={this.state.style}
         >
           <div className="navbar-brand">

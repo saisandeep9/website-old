@@ -34,7 +34,10 @@ class Blog extends Component {
 
   render() {
     return (
-      <main style={{ minHeight: "300px", marginTop: "95px" }}>
+      <main
+        className="overflow-hidden"
+        style={{ minHeight: "300px", marginTop: "95px" }}
+      >
         <CoverPage />
 
         <MainPage />

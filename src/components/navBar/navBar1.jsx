@@ -4,7 +4,7 @@ import "./navBar.css";
 
 const NavBar1 = () => {
   return (
-    <div className="d-none d-md-block ">
+    <div className="d-none d-md-block  ">
       <nav className="navbar  navbar-expand-md nav-bar1 justify-content-center  ">
         <ul className="  navbar-nav  ">
           <li className="nav-item  ">

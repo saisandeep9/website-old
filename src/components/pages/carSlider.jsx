@@ -5,9 +5,8 @@ import "./carSlider.css";
 
 import Slider from "react-slick";
 import carServiceData from "../../data/carServices";
-// import { Link } from "react-router-dom";
 
-function SampleNextArrow(props) {
+function NextArrow(props) {
   const { className, style, onClick } = props;
 
   return (
@@ -30,7 +29,7 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
+function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -66,10 +65,7 @@ class CarSlider extends Component {
 
   componentDidMount() {
     const data = carServiceData.carServices;
-
-    // const car = [data[0]];
     this.setState({ data });
-
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2,
@@ -77,7 +73,6 @@ class CarSlider extends Component {
   }
 
   render() {
-    // const { select } = this.props;
     let settings = {
       infinite: true,
       autoplay: true,
@@ -88,9 +83,6 @@ class CarSlider extends Component {
       slidesToShow: 2,
       slidesToScroll: 1,
       arrows: false,
-      // centerMode: true,
-      // nextArrow: <SampleNextArrow />,
-      // prevArrow: <SampleNextArrow />,
 
       responsive: [
         {
@@ -113,7 +105,7 @@ class CarSlider extends Component {
     return (
       <div
         style={{
-          background: "#ffff",
+          background: "#fffff",
           paddingBottom: "56px",
           marginBottom: "-16px",
         }}
@@ -184,16 +176,14 @@ class CarSlider extends Component {
           asNavFor={this.state.nav1}
           ref={(slider) => (this.slider2 = slider)}
           {...settings}
-          nextArrow={<SampleNextArrow />}
-          prevArrow={<SamplePrevArrow />}
+          nextArrow={<NextArrow />}
+          prevArrow={<PrevArrow />}
           // slidesToShow={2}
           arrows={true}
           swipeToSlide={true}
           focusOnSelect={true}
           className="slider2"
         >
-          {console.log("data", this.state.data)}
-
           {this.state.data.map((d) => (
             <div key={d.carName}>
               <div className="m-4 cards ">
@@ -201,18 +191,21 @@ class CarSlider extends Component {
                   // className="rounded-circle"
                   alt={"users here"}
                   src={d.img}
-                  // style={{ height: "290px", width: "290px" }}
-                  className=""
                 />
 
-                <div className=" row ml-3 ">
-                  <p className="text-left h3 ml-3 col-4 ">{d.title}</p>
-                  {/* <div className="float-right mr-4"> */}
-                  <p className="text-right text-dark h6 col-6">
+                {/* <div id="textbox">
+                  <p class="alignleft">Text on the left.</p>
+                  <p class="alignright">Text on the right.</p>
+                </div> */}
+                <div className="mt-4 ml-3 mr-3">
+                  <p className="title ml-3  mt-1 md-h1 float-left ">
+                    {d.title}
+                  </p>
+
+                  <p className="max mr-3 mt-1 text-dark float-right align-middle ">
                     <i className="fa fa-user "></i>&nbsp;&nbsp;&nbsp;Max:{" "}
                     {d.maxPerson}
                   </p>
-                  {/* </div> */}
                 </div>
               </div>
             </div>
