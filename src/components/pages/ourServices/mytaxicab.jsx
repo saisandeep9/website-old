@@ -15,11 +15,11 @@ const Mytaxicab = () => {
   let settings = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 9000,
+    autoplaySpeed: 6000,
     speed: 1000,
     focusOnSelect: true,
     // arrows: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
 
@@ -45,10 +45,10 @@ const Mytaxicab = () => {
     <div style={{ minHeight: "700px ", marginTop: "80px" }}>
       <Header data={data} />
 
-      <div className="mytaxicab">
-        <ul>
+      <div className="mytaxicab  ">
+        <ul className="text-center">
           <Slider {...settings}>
-            <li className="text-center">
+            <li>
               <img
                 src="v1.jpg"
                 alt=""
@@ -57,19 +57,44 @@ const Mytaxicab = () => {
               <h5 className="mt-3">Safe Raid</h5>
             </li>
             <li>
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
               <h5 className="mt-3">More Earnings </h5>
             </li>
             <li>
-              {" "}
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
               <h5 className="mt-3">No Commission</h5>
             </li>
             <li>
-              {" "}
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
               <h5 className="mt-3">Gov Rates</h5>
             </li>
             <li>
-              {" "}
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
               <h5 className="mt-3">Flexible Billing </h5>
+            </li>
+            <li>
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+              <h5 className="mt-3">No Commission</h5>
             </li>
           </Slider>
         </ul>
