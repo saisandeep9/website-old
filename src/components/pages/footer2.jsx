@@ -29,7 +29,7 @@ const Footer = () => {
       >
         <div className="col-md-3 col-12 text-left pt-4  ">
           <h3 className="   limoking-widget-title">About</h3>
-          <div className="title-line-footer"></div>
+          <div className="title-line-footer "></div>
 
           <p className="mt-2">
             some text about the RST some text about the RST some text about the
@@ -45,7 +45,16 @@ const Footer = () => {
           <h3 className=" text-light limoking-widget-title  ">
             connect with us
           </h3>
-          <div className="title-line-center"></div>
+          <div
+            className="d-none d-sm-block"
+            style={{
+              width: "20px",
+              height: "2px",
+              margin: "15px auto 25px 90px",
+              background: "#ffff",
+            }}
+          ></div>
+          <div className="title-line-footer "></div>
 
           <h3 className>
             <div className="row  justify-content-md-center">
@@ -78,7 +87,15 @@ const Footer = () => {
           style={{ paddingRight: "130px" }}
         >
           <h3 className="   limoking-widget-title">our services</h3>
-          <div className=" title-line-center "></div>
+          <div
+            className=" d-none d-sm-block"
+            style={{
+              width: "20px",
+              height: "2px",
+              margin: "15px auto 25px 50px",
+              background: "#ffff",
+            }}
+          ></div>
 
           <p style={{ color: "white" }}>Indian Taxis</p>
 
@@ -90,7 +107,7 @@ const Footer = () => {
         </div>
         <div className="col-md-3 col-12 text-left pt-4 ">
           <h3 className="   limoking-widget-title">contact</h3>
-          <div className="title-line-footer"></div>
+          <div className="title-line-footer d-none d-sm-block"></div>
           <label htmlFor="" className="mb-3">
             <i
               className=" text-light fa fa-map-marker"

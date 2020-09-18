@@ -26,7 +26,7 @@ const CoverPage2 = () => {
           <img
             className="d-block "
             style={{ width: "100%", height: "600px" }}
-            src="1.jpg"
+            src="images/indiantaxis.jpg"
             alt="Second slide"
           />
 
@@ -39,7 +39,7 @@ const CoverPage2 = () => {
           <img
             className="d-block "
             style={{ width: "100%", height: "600px", marginLeft: "0px" }}
-            src="images/cp3.jpg"
+            src="images/mytaxicab.jpg"
             alt="Third slide"
           />
 

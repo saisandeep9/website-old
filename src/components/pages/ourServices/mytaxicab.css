@@ -1,0 +1,21 @@
+.mytaxicab {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.mytaxicab img {
+  margin: auto auto;
+}
+.mytaxicab li {
+  height: 120px;
+  padding-top: 10px;
+}
+.mytaxicab h5 {
+  color: var(--rstlog-color);
+}
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}

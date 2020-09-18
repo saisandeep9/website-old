@@ -1,5 +1,9 @@
 import React from "react";
 import Header from "../../common/header";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./mytaxicab.css";
+import Slider from "react-slick";
 
 const Mytaxicab = () => {
   const data = {
@@ -7,39 +11,69 @@ const Mytaxicab = () => {
     subText:
       "A My taxi cab landing page template freshly redesigned for Bootstrap",
   };
+
+  let settings = {
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 9000,
+    speed: 1000,
+    focusOnSelect: true,
+    // arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div style={{ minHeight: "700px ", marginTop: "80px" }}>
       <Header data={data} />
-      {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
-        <div class="container text-center pt-5 ">
-          <h1>My taxi cab</h1>
-          <p>A landing page template freshly redesigned for Bootstrap 4</p>
-        </div>
-        <div class="container1">
-          <svg
-            viewBox="0 0 500 500"
-            preserveAspectRatio="none"
-            style={{ zIndex: "-2" }}
-          >
-            <path
-              d="M0, 100 C150, 200 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
 
-            <path
-              d="M0, 80 C300, 0 400,  
-                300 500, 50 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
-            <path
-              d="M0, 100 C150, 300 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#183fee80" }}
-            ></path>
-          </svg>
-        </div>
-      </header> */}
+      <div className="mytaxicab">
+        <ul>
+          <Slider {...settings}>
+            <li className="text-center">
+              <img
+                src="v1.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+              <h5 className="mt-3">Safe Raid</h5>
+            </li>
+            <li>
+              <h5 className="mt-3">More earnings </h5>
+            </li>
+            <li>
+              {" "}
+              <h5 className="mt-3">No Commission</h5>
+            </li>
+            <li>
+              {" "}
+              <h5 className="mt-3">Gov Rates</h5>
+            </li>
+            <li>
+              {" "}
+              <h5 className="mt-3">Flexible Billing </h5>
+            </li>
+          </Slider>
+        </ul>
+      </div>
     </div>
   );
 };
