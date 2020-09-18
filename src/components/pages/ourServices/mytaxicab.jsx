@@ -57,7 +57,7 @@ const Mytaxicab = () => {
               <h5 className="mt-3">Safe Raid</h5>
             </li>
             <li>
-              <h5 className="mt-3">More earnings </h5>
+              <h5 className="mt-3">More Earnings </h5>
             </li>
             <li>
               {" "}
