@@ -54,7 +54,7 @@ const Footer = () => {
               background: "#ffff",
             }}
           ></div>
-          <div className="title-line-footer "></div>
+          <div className="title-line-footer d-none d-sm-block d-md-none"></div>
 
           <h3 className>
             <div className="row  justify-content-md-center">
@@ -96,6 +96,7 @@ const Footer = () => {
               background: "#ffff",
             }}
           ></div>
+          <div className="title-line-footer d-none d-sm-block d-md-none "></div>
 
           <p style={{ color: "white" }}>Indian Taxis</p>
 
