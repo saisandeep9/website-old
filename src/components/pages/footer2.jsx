@@ -45,15 +45,7 @@ const Footer = () => {
           <h3 className=" text-light limoking-widget-title  ">
             connect with us
           </h3>
-          <div
-            className="title-line-foote"
-            style={{
-              width: "20px",
-              height: "2px",
-              margin: "15px auto 25px 90px",
-              background: " #ffff",
-            }}
-          ></div>
+          <div className="title-line-center"></div>
 
           <h3 className>
             <div className="row  justify-content-md-center">
@@ -86,15 +78,7 @@ const Footer = () => {
           style={{ paddingRight: "130px" }}
         >
           <h3 className="   limoking-widget-title">our services</h3>
-          <div
-            className=" title-line-foote "
-            style={{
-              width: "20px",
-              height: "2px",
-              margin: "15px auto 25px 55px",
-              background: " #ffff",
-            }}
-          ></div>
+          <div className=" title-line-center "></div>
 
           <p style={{ color: "white" }}>Indian Taxis</p>
 
