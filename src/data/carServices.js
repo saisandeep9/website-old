@@ -39,7 +39,7 @@ const data = [
     carName: "tataace",
     title: "Tata Ace",
     text: "text part",
-    maxPerson: "1 + goods carrier",
+    maxPerson: "1 ",
   },
 ];
 

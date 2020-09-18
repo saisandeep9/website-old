@@ -3,11 +3,12 @@
   color: rgb(249, 249, 250);
   height: 30px !important;
 }
-
-.nav-bar2 {
-  /* background-color: white; */
-  height: 65px;
+@media screen and (min-width: 500px) {
+  .nav-bar2 {
+    height: 65px;
+  }
 }
+
 /* .scroll {
   background-color: #eeee1a !important;
 } */
@@ -46,7 +47,7 @@
 .nav__submenu {
   padding-top: 20px;
   padding-bottom: 10px;
-
+  margin-top: 20px;
   font-weight: 400;
   font-size: 17px;
   /* text-transform: none; */

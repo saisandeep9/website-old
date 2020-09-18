@@ -43,3 +43,7 @@
   color: white;
   cursor: pointer;
 }
+
+.footer hr {
+  border: 1px solid #1e1e1e;
+}

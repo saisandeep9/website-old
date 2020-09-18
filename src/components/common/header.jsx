@@ -21,7 +21,10 @@ const Header = (data) => {
 
         {/* ................... */}
       </header>
-      <div className="container1" style={{ marginTop: "-50px" }}>
+      <div
+        className="container1"
+        style={{ marginTop: "-50px", backgroundColor: "white" }}
+      >
         <svg
           viewBox="0 0 500 500"
           preserveAspectRatio="none"

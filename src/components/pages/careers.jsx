@@ -29,23 +29,24 @@ const Careers = () => {
         style={{
           marginTop: "50px",
           width: "100%",
-
+          background: "white ",
           paddingTop: "53px",
           paddingBottom: "60px",
         }}
       >
         <div
-          className=" text-left "
+          className=" text-left  "
           // style={{ marginLeft: "40px" }}
         >
-          <div className="row  ml-md-4 col-12">
+          <div className="row  ml-md-4 col-12 ">
             {/* <div className="col-12"> */}
             <ul
-              className=" list-group list-group-flush h4  col-md-11  ml-md-3"
+              className=" list-group list-group-flush   h4  col-md-11  ml-md-3 "
               style={{ cursor: "pointer" }}
             >
               <li
-                className="list-group-item"
+                className="list-group-item "
+                style={{ background: "white " }}
                 onClick={() => setmarketing(!marketing)}
                 // aria-controls="example-collapse-text"
                 aria-expanded={marketing}
@@ -59,11 +60,15 @@ const Careers = () => {
                   className="list-inline "
                   // className="collapse lists"
                 >
-                  {careersdata.marketingdata.map((mrt) => (
-                    <li className="list-inline-item" key={mrt.titel}>
-                      <Card data={mrt} />
-                    </li>
-                  ))}
+                  {careersdata.marketingdata.length === 0 ? (
+                    <h1>At present vacancy </h1>
+                  ) : (
+                    careersdata.marketingdata.map((mrt) => (
+                      <li className="list-inline-item" key={mrt.titel}>
+                        <Card data={mrt} />
+                      </li>
+                    ))
+                  )}
                 </ul>
               </Collapse>
               <li
@@ -118,7 +123,6 @@ const Careers = () => {
                   ))}
                 </ul>
               </Collapse>
-              <li className="list-group-item"></li>
             </ul>
 
             {/* </div> */}

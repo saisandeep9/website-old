@@ -105,7 +105,7 @@ class CarSlider extends Component {
     return (
       <div
         style={{
-          background: "#fffff",
+          background: "white",
           paddingBottom: "56px",
           marginBottom: "-16px",
         }}

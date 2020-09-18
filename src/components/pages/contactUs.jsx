@@ -10,40 +10,14 @@ const ContactUs = () => {
       "A Contact Us landing page template freshly redesigned for Bootstrap",
   };
   return (
-    <div style={{ minHeight: "800px ", marginTop: "80px" }}>
+    <div style={{ minHeight: "950px ", marginTop: "90px" }}>
       <Header data={data} />
-      {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
-        <div class="container text-center pt-5 ">
-          <h1>Contact Us</h1>
-          <p>A landing page template freshly redesigned for Bootstrap 4</p>
-        </div>
-        <div class="container1" style={{ marginTop: "-8px" }}>
-          <svg
-            viewBox="0 0 500 500"
-            preserveAspectRatio="none"
-            style={{ zIndex: "-2" }}
-          >
-            <path
-              d="M0, 100 C150, 200 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
 
-            <path
-              d="M0, 80 C300, 0 400,  
-                300 500, 50 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#1c18ee57" }}
-            ></path>
-            <path
-              d="M0, 100 C150, 300 350, 
-                0 500, 100 L500, 00 L0, 0 Z"
-              style={{ stroke: "none", fill: "#183fee80" }}
-            ></path>
-          </svg>
-        </div>
-      </header> */}
-      <div className="row mt-5  justify-content-center ">
-        <div className="col-md-5 m-1 ">
+      <div
+        className="row mt-5  justify-content-center  "
+        style={{ marginTop: "90px" }}
+      >
+        <div className="col-md-3 m-1 ">
           <div className="media mt-2">
             <img
               src="/images/cc2.jpg"
@@ -62,7 +36,8 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-
+        </div>
+        <div className="col-md-3 m-1 ">
           <div className="media mt-2">
             <img
               src="/images/whatsapp.png"
@@ -87,6 +62,8 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="col-md-3 m-1 ">
           <div className="media mt-2">
             <img
               src="/images/email.png"
@@ -104,14 +81,15 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-
-        <div
-          className=" col-md-4 m-1 "
-          style={{ marginTop: "60px", background: "#20201e" }}
-        >
-          <Form />
-        </div>
       </div>
+
+      <div
+        className=" col-md-4 m-1 "
+        style={{ marginTop: "60px", background: "#20201e" }}
+      >
+        <Form />
+      </div>
+
       {/* 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107738.57830893247!2d77.55706675685148!3d12.851232445283456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15140c5b609b%3A0xba1ad6dd5991e031!2sRST%20Booking%20Private%20Limited%20(RS%20Travels%20Bangalore)!5e0!3m2!1sen!2sin!4v1599824056337!5m2!1sen!2sin"

@@ -22,9 +22,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer overflow-hidden " style={styel}>
-      <div className=" justify-content-center row pt-md-3 m-md-0 m-1 ">
-        <div className="col-md-2 col-12 text-left m-md-3 ">
+    <footer className="footer overflow-hidden   " style={styel}>
+      <div
+        className=" justify-content-center row  m-md-0  "
+        style={{ paddingLeft: "4%", paddingRight: "4%", paddingBottom: "5%" }}
+      >
+        <div className="col-md-3 col-12 text-left pt-4  ">
           <h3 className="   limoking-widget-title">About</h3>
           <div className="title-line-footer"></div>
 
@@ -38,8 +41,70 @@ const Footer = () => {
             alt=""
           />
         </div>
+        <div className="col-md-3 col-12 text-md-center pt-4">
+          <h3 className=" text-light limoking-widget-title  ">
+            connect with us
+          </h3>
+          <div
+            className="title-line-foote"
+            style={{
+              width: "20px",
+              height: "2px",
+              margin: "15px auto 25px 90px",
+              background: " #ffff",
+            }}
+          ></div>
 
-        <div className="col-md-2 col-12 text-left m-md-3">
+          <h3 className>
+            <div className="row  justify-content-md-center">
+              <div className="col-2">
+                <i className="fa fa-facebook-square socialMedia"></i>
+              </div>
+              <div className="col-2">
+                <i className="fa fa-instagram  socialMedia"></i>
+              </div>
+              <div className="col-2">
+                <i className="fa fa-twitter  socialMedia"></i>
+              </div>
+            </div>
+            <div className="row mt-4 justify-content-md-center">
+              <div className="col-2">
+                <i className="fa fa-linkedin socialMedia"></i>
+              </div>
+              <div className="col-2">
+                <i className="fa fa-youtube socialMedia"></i>
+              </div>
+              <div className="col-2">
+                <i className="fa fa-telegram  socialMedia"></i>
+              </div>
+            </div>
+          </h3>
+        </div>
+
+        <div
+          className="col-md-3 col-12 text-md-center pt-4"
+          style={{ paddingRight: "130px" }}
+        >
+          <h3 className="   limoking-widget-title">our services</h3>
+          <div
+            className=" title-line-foote "
+            style={{
+              width: "20px",
+              height: "2px",
+              margin: "15px auto 25px 55px",
+              background: " #ffff",
+            }}
+          ></div>
+
+          <p style={{ color: "white" }}>Indian Taxis</p>
+
+          <p className="ml-3">For Users </p>
+
+          <p style={{ color: "white" }}>My Taxi Cab</p>
+
+          <p className="ml-3">For Drivers </p>
+        </div>
+        <div className="col-md-3 col-12 text-left pt-4 ">
           <h3 className="   limoking-widget-title">contact</h3>
           <div className="title-line-footer"></div>
           <label htmlFor="" className="mb-3">
@@ -68,7 +133,7 @@ const Footer = () => {
             &nbsp; +91&nbsp;29232393
           </label>
           <br />
-          <label htmlFor="" className="mb-4">
+          {/* <label htmlFor="" className="mb-4">
             <i
               className="limoking-icon fa fa-mobile"
               style={{
@@ -78,8 +143,8 @@ const Footer = () => {
               }}
             ></i>
             &nbsp; (+91) 343954395
-          </label>
-          <br />
+          </label> */}
+
           <label htmlFor="" className="mb-4">
             <i
               className="limoking-icon fa fa-envelope-o"
@@ -91,63 +156,6 @@ const Footer = () => {
             ></i>
             &nbsp; indiantaxis@gmail.com
           </label>
-        </div>
-
-        <div className="col-md-2 col-12 text-left m-md-3 ">
-          <h3 className="   limoking-widget-title">our services</h3>
-          <div className="title-line-footer"></div>
-
-          <div className="float-right" style={{ marginRight: "30px" }}>
-            <Icon
-              className="icon"
-              style={{
-                height: "40px",
-                width: "40px",
-              }}
-              icon={googlePlay}
-            />
-          </div>
-          <p style={{ color: "white" }}>Indian Taxis</p>
-
-          <p className="ml-1">For Users </p>
-
-          {/* <img
-              src="images/playstore.png"
-              alt=""
-              style={{ height: "40px", width: "60px" }}
-            /> */}
-
-          <hr />
-          <div className="float-right" style={{ marginRight: "30px" }}>
-            <Icon
-              className="icon"
-              style={{
-                height: "40px",
-                width: "40px",
-              }}
-              icon={googlePlay}
-            />
-          </div>
-          <p style={{ color: "white" }}>My Taxi Cab</p>
-
-          <p className="ml-1">For Drivers </p>
-
-          {/* <i class="fa fa-google "> </i> */}
-          {/* <i class="fa fa-google-play h3"></i> */}
-        </div>
-        <div className="col-md-2  col-12 text-left m-md-3">
-          <h3 className=" text-light limoking-widget-title">connect with us</h3>
-          <div className="title-line-footer"></div>
-
-          <h1 className="text-secondary">
-            <i className="fa fa-facebook-square m-3 socialMedia"></i>{" "}
-            <i className="fa fa-instagram m-3 socialMedia"></i>
-            <i className="fa fa-twitter m-3 socialMedia"></i>
-            <br />
-            <i className="fa fa-linkedin m-3 socialMedia"></i>
-            <i className="fa fa-youtube m-3 socialMedia"></i>
-            <i className="fa fa-telegram m-3 socialMedia"></i>
-          </h1>
         </div>
       </div>
 
