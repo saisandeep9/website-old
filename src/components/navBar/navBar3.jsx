@@ -31,38 +31,38 @@ class NavBar2 extends Component {
   // };
 
   state = {
-    style: {
-      background: "white",
-    },
+    // style: {
+    //   background: "white",
+    // },
+    className: "navbar nav-bar2 nav-bar2-nor",
   };
 
   listenScrollEvent = (e) => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 900) {
       this.setState({
-        style: {
-          boxShadow: "0px 0px 5px 2px #20201e",
-          background: "#E7E7E7",
-          // background: "#20201e86",
-        },
+        className: "navbar nav-bar2 nav-bar2-scroll ",
       });
     } else {
-      this.setState({ style: { background: "white" } });
+      this.setState({ className: "navbar nav-bar2 nav-bar2-nor" });
     }
   };
 
   componentDidMount() {
     window.addEventListener("scroll", this.listenScrollEvent);
+    this.setState({ className: "navbar nav-bar2 nav-bar2-nor" });
   }
 
   render() {
-    console.log(this.state.style);
+    // console.log(this.state.style);
     return (
       <div className=" fixed-top  ">
         <NavBar1 />
+        {console.log(this.state.className)}
         <Navbar
           expand="md"
-          className="navbar nav-bar2  "
-          style={this.state.style}
+          // className="navbar nav-bar2 nav-bar2-nor "
+          className={this.state.className}
+          // style={this.state.style}
         >
           <div className="navbar-brand">
             <img
@@ -89,8 +89,8 @@ class NavBar2 extends Component {
                   About
                 </NavLink>
               </li>
-              <li className=" ">
-                <NavLink exact to={"/careers"} className="nav-items  nav-link">
+              <li className="  ">
+                <NavLink exact to={"/careers"} className="nav-items nav-link">
                   Careers
                 </NavLink>
               </li>

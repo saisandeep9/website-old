@@ -15,7 +15,7 @@ const Mytaxicab = () => {
   let settings = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 3000,
     speed: 1000,
     focusOnSelect: true,
     // arrows: true,

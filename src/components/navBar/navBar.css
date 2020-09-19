@@ -3,37 +3,45 @@
   color: rgb(249, 249, 250);
   height: 30px !important;
 }
+
 @media screen and (min-width: 500px) {
   .nav-bar2 {
     height: 65px;
   }
 }
-
-/* .scroll {
-  background-color: #eeee1a !important;
-} */
-
-.scrolled {
-  background-color: red;
+.nav-bar2-nor {
+  background: white;
+}
+.nav-bar2-scroll {
+  /* box-shadow: 0px 0px 5px 2px #20201e; */
+  /* background: #e7e7e7; */
+  /* // background: "#20201e86", */
+  background-color: #20201ea6;
 }
 
 .nav-items {
-  /* font-size: 20px !important; */
   font-weight: 500;
   color: #393185 !important;
+  text-align: center;
+  width: 150px;
   text-align: center;
 }
 
 .nav-bar2 .active {
   color: #20201e !important;
 }
-.nav-bar2 li {
-  width: 150px;
-  text-align: center;
-}
 
 .nav-bar2 .nav-items:hover {
   color: #20201e !important;
+}
+.nav-bar2.nav-bar2-scroll .nav-items {
+  color: #ffffff !important;
+}
+.nav-bar2.nav-bar2-scroll .nav-items:hover {
+  color: #fdfdfbcd !important;
+}
+.nav-bar2.nav-bar2-scroll .active {
+  color: #e8e8e5cd !important;
 }
 
 .nav__submenu {
@@ -42,6 +50,7 @@
 
 .nav-menu-item:hover .nav__submenu {
   display: block;
+  padding-left: 5px;
 }
 
 .nav__submenu {
@@ -53,19 +62,30 @@
   /* text-transform: none; */
   display: none;
   position: absolute;
-
   list-style: none;
-  width: 150px;
 
-  background-color: white;
+  /* background-color: white; */
 }
 
+.nav-bar2.nav-bar2-scroll .nav__submenu {
+  /* background-color: #20201ea6; */
+  /* box-shadow: 0px 0px 5px 2px #20201e; */
+}
 .nav__submenu-item {
   text-align: left !important;
-  margin-left: -20px;
+  background-color: white;
+  width: 170px;
+  padding-left: 30px !important;
+  padding-bottom: 10px !important;
   color: var(--rstlog-color) !important;
 }
+.nav-bar2.nav-bar2-scroll .nav__submenu-item {
+  background-color: #20201ea6;
+}
+.nav-bar2.nav-bar2-scroll .nav__submenu-item:hover {
+  color: #fdfdfbcd;
+}
 
-/* .nav__submenu-item:hover {
-  color: var(--nav1-color);
-} */
+.nav-bar2.nav-bar2-scroll .nav__submenu-item {
+  color: white !important;
+}
