@@ -66,7 +66,7 @@ class NavBar2 extends Component {
         >
           <div className="navbar-brand">
             <img
-              src="1.jpg"
+              src="rstlog.png"
               alt="rstlog"
               className=""
               style={{ width: "50x", height: "50px" }}
