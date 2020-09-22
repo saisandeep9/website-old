@@ -4,7 +4,7 @@ import "./coverpage.css";
 
 const CoverPage2 = () => {
   return (
-    <div>
+    <div className="coverPage">
       <Carousel>
         <Carousel.Item>
           <img
@@ -14,19 +14,9 @@ const CoverPage2 = () => {
             alt="First slide"
           />
 
-          <Carousel.Caption
-            className=""
-            style={{
-              marginBottom: "15%",
-              background: "#20201ec1",
-              color: "#7474e5",
-              lineHeight: "2.6",
-            }}
-          >
+          <Carousel.Caption className="caption">
             <h2>RST Booking</h2>
-            <p className="text-light" style={{ fontSize: "20px" }}>
-              Your Trusted Taxi Partner
-            </p>
+            <p className="text-light">Your Trusted Taxi Partner</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -37,17 +27,9 @@ const CoverPage2 = () => {
             alt="Second slide"
           />
 
-          <Carousel.Caption
-            className=""
-            style={{
-              marginBottom: "15%",
-              background: "#20201ec1",
-              color: "#7474e5",
-              lineHeight: "2.6",
-            }}
-          >
+          <Carousel.Caption className="caption">
             <h2 className="">Indian Taxis</h2>
-            <p className="text-light" style={{ fontSize: "20px" }}>
+            <p className="text-light">
               Quick, Hassle Free and Reliable Cab Services!{" "}
             </p>
           </Carousel.Caption>
@@ -60,18 +42,9 @@ const CoverPage2 = () => {
             alt="Third slide"
           />
 
-          <Carousel.Caption
-            style={{
-              marginBottom: "15%",
-              background: "#20201ec1",
-              color: "#7474e5",
-              lineHeight: "2.6",
-            }}
-          >
+          <Carousel.Caption className="caption">
             <h2>My Taxi Cab</h2>
-            <p className="text-light" style={{ fontSize: "20px" }}>
-              Drive With Us and Earn Higher!
-            </p>
+            <p className="text-light">Drive With Us and Earn Higher!</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

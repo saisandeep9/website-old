@@ -8,7 +8,6 @@
 }
 body {
   background-color: #f7f7f7 !important;
-  /* overflow-x: hidden; */
 }
 
 .drop {
@@ -25,16 +24,10 @@ body {
   /* z-index: 1; */
 }
 
-/* .nav-bar1:hover {
-  color: rgb(78, 130, 199);
-} */
 .nav-h {
   height: 40px;
 }
 
-/* .nav-bar2 NavLink:hover {
-  text-decoration: none;
-} */
 .nav-brand-font {
   font-size: 25px !important;
   font-weight: 500;
@@ -84,83 +77,6 @@ body {
   background-color: var(--rstlog-color);
 }
 
-/* side nave bar  */
-/* 
-#sidenav a {
-  /* position: absolute; 
-  position: fixed;
-  left: -20px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 90px;
-  height: 90px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-}
-#sidenav a:hover {
-  left: 5px;
-}
-
-#instagram {
-  top: 210px;
-}
-
-#facebook {
-  top: 150px;
-}
-
-#twitter {
-  top: 270px;
-}
-
-#youtube {
-  top: 330px;
-} */
-
-/* .wave:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-} */
-/* 
-.wave {
-  /* position: absolute; 
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 70px;
-  width: 100%;
-  background: #007bff;
-   /* z-index: -1;  
-}*/
-/*.wave::before {
-  content: "";
-  display: block;
-  position: absolute; 
-   border-radius: 50% 80%;
-  width: 40%;
-  height: 75px;
-  background-color: #0275d8;
-  right: 0px;
-  top: 35px;
-}
-.wave::after {
-  content: "";
-  display: block;
-  position: absolute; 
-  border-radius: 100% 90%;
-  width: 51%;
-  height: 75px;
-  background-color: #0275d8;
-  left: 30px;
-  top: 25px;
-} */
-
 svg {
   /* display: inline-block; */
   position: absolute;
@@ -184,7 +100,7 @@ svg {
   left: 0; */
 }
 
-blockquote {
+/* blockquote {
   border: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: -30px;
@@ -192,4 +108,17 @@ blockquote {
 
 blockquote h3 {
   font-size: 21px;
+} */
+
+/* about */
+
+.about h3,
+.mytaxicab h3 {
+  color: var(--rstlog-color);
+}
+.about p,
+.mytaxicab p {
+  text-indent: 50px;
+  text-align: justify;
+  text-justify: inter-word;
 }

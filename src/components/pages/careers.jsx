@@ -12,7 +12,7 @@ const Careers = () => {
 
   const data = {
     title: "Careers",
-    subText: " A road map to start your Career",
+    subText: " A Road Map to Start your Career",
   };
 
   return (

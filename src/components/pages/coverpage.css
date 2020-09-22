@@ -1,4 +1,10 @@
-/* img {
-  width: "100%";
-  height: "400px";
-} */
+.coverPage .caption {
+  margin-bottom: 15%;
+  background: #20201ec1;
+  color: #7474e5;
+  line-height: 2.6;
+}
+
+.coverPage .caption p {
+  font-size: 20px;
+}

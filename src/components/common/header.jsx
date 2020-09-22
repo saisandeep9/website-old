@@ -15,7 +15,7 @@ const Header = (data) => {
         <div className="container text-center  " style={{ padding: "50px 0" }}>
           <h1> {data.data.title} </h1>
           <div className="title-line" />
-          <p>{data.data.subText}</p>
+          <p style={{ fontSize: "19px" }}> {data.data.subText}</p>
         </div>
 
         {/* ........... */}

@@ -134,10 +134,10 @@ class Form extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <div className=" text-left">
+          <div className=" text-left mt-4">
             <button
               type="submit"
-              className="center btn m-2 mb-2 col-md-4 text-light "
+              className="center btn m-2 mb-2 mt-3col-md-4 text-light "
               style={{ background: "#393185" }}
             >
               Contact Us

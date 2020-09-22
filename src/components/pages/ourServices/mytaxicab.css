@@ -1,20 +1,20 @@
-.mytaxicab {
+.mytaxicabslider {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
 
-  bottom: -40px;
+  bottom: -1500px;
 }
 
-.mytaxicab img {
+.mytaxicabslider img {
   margin: auto auto;
 }
-.mytaxicab li {
+.mytaxicabslider li {
   height: 120px;
   padding-top: 10px;
 }
-.mytaxicab h5 {
+.mytaxicabslider h5 {
   color: var(--rstlog-color);
 }
 .slick-slide,

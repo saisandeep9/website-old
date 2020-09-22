@@ -5,12 +5,13 @@ const IndianTaxis = () => {
   const data = {
     title: "Indian Taxis",
     subText:
-      "A Indian taxis landing page template freshly redesigned for Bootstrap",
+      "We provide convenient mobility solutions to commuters at the best and lowest fares. ",
   };
 
   return (
     <div style={{ minHeight: "700px ", marginTop: "80px" }}>
       <Header data={data} />
+
       {/* <header className="bg-primary text-white  " style={{ height: "177px" }}>
         <div class="container text-center pt-5 ">
           <h1>Indian taxis</h1>
