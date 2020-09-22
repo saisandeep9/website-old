@@ -140,7 +140,7 @@ const Footer = () => {
                 fontSize: "20px",
               }}
             ></i>
-            &nbsp; +91&nbsp;29232393
+            &nbsp; +91&nbsp;8068464799
           </label>
           <br />
           {/* <label htmlFor="" className="mb-4">
@@ -164,7 +164,7 @@ const Footer = () => {
                 fontSize: "16px",
               }}
             ></i>
-            &nbsp; indiantaxis@gmail.com
+            &nbsp; info@rstbooking.com
           </label>
         </div>
       </div>

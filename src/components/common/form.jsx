@@ -126,8 +126,8 @@ class Form extends Component {
             <i class="fa fa-commenting" aria-hidden="true"></i>
             &nbsp;&nbsp; Message
             <textarea
-              row="4"
-              // type="text"
+              type="textarea"
+              rows={6}
               name="message"
               value={data.message}
               className="form-control input-lg mt-2"
