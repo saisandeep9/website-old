@@ -3,6 +3,11 @@
   --nav1-color: #1e1e1e;
 }
 
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
 .App {
   text-align: center;
 }

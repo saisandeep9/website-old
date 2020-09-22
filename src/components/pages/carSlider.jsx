@@ -188,6 +188,7 @@ class CarSlider extends Component {
             <div key={d.carName}>
               <div className="m-4 cards ">
                 <img
+                  className="bg-dark"
                   // className="rounded-circle"
                   alt={"users here"}
                   src={d.img}

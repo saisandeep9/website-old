@@ -67,24 +67,39 @@ const Footer = () => {
           <h3 className>
             <div className="row  justify-content-md-center">
               <div className="col-2">
-                <i className="fa fa-facebook-square socialMedia"></i>
+                <a target="_blank" href="http://localhost:3000/">
+                  <i className="fa fa-facebook-square socialMedia"></i>
+                </a>
               </div>
               <div className="col-2">
-                <i className="fa fa-instagram  socialMedia"></i>
+                <a target="_blank" href="http://localhost:3000/">
+                  <i className="fa fa-instagram  socialMedia"></i>
+                </a>
               </div>
               <div className="col-2">
-                <i className="fa fa-twitter  socialMedia"></i>
+                <a target="_blank" href="http://localhost:3000/">
+                  <i className="fa fa-twitter  socialMedia"></i>
+                </a>
               </div>
             </div>
             <div className="row mt-4 justify-content-md-center">
               <div className="col-2">
-                <i className="fa fa-linkedin socialMedia"></i>
+                <a target="_blank" href="http://localhost:3000/">
+                  <i className="fa fa-linkedin socialMedia"></i>
+                </a>
               </div>
               <div className="col-2">
-                <i className="fa fa-youtube socialMedia"></i>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UC2de2IQ047UQPLJ7czFuvsg"
+                >
+                  <i className="fa fa-youtube socialMedia"></i>
+                </a>
               </div>
               <div className="col-2">
-                <i className="fa fa-telegram  socialMedia"></i>
+                <a target="_blank" href="http://localhost:3000/">
+                  <i className="fa fa-telegram  socialMedia"></i>
+                </a>
               </div>
             </div>
           </h3>
