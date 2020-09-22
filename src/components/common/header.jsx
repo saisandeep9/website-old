@@ -8,8 +8,7 @@ const Header = (data) => {
         style={{
           height: "200px",
           // backgroundColor: "#393185",
-          background:
-            " linear-gradient(var(--rstlog-color) 30%, #183fee80 100%)",
+          background: " linear-gradient(var(--rstlog-color) 30%, #495bef 100%)",
           // marginBottom: "40px",
         }}
       >

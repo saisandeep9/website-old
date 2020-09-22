@@ -20,9 +20,10 @@ const CoverPage2 = () => {
               marginBottom: "15%",
               background: "#20201ec1",
               color: "#7474e5",
+              lineHeight: "2.6",
             }}
           >
-            <h3>RST Booking</h3>
+            <h2>RST Booking</h2>
             <p className="text-light" style={{ fontSize: "20px" }}>
               Your Trusted Taxi Partner
             </p>
@@ -42,10 +43,11 @@ const CoverPage2 = () => {
               marginBottom: "15%",
               background: "#20201ec1",
               color: "#7474e5",
+              lineHeight: "2.6",
             }}
           >
-            <h3 className="">Indian Taxis</h3>
-            <p className="text-light">
+            <h2 className="">Indian Taxis</h2>
+            <p className="text-light" style={{ fontSize: "20px" }}>
               Quick, Hassle Free and Reliable Cab Services!{" "}
             </p>
           </Carousel.Caption>
@@ -63,10 +65,13 @@ const CoverPage2 = () => {
               marginBottom: "15%",
               background: "#20201ec1",
               color: "#7474e5",
+              lineHeight: "2.6",
             }}
           >
-            <h3>My Taxi Cab</h3>
-            <p className="text-light">Drive With Us and Earn Higher!</p>
+            <h2>My Taxi Cab</h2>
+            <p className="text-light" style={{ fontSize: "20px" }}>
+              Drive With Us and Earn Higher!
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

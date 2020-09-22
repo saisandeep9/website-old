@@ -46,17 +46,40 @@ const ContactUs = () => {
 
           <ul style={{ listStyle: "none" }}>
             <li style={style}>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; 11th A
-              cross, Kodichikkanahalli Main Rd, Bommanahalli, Bengaluru,
-              Karnataka 560068
+              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+              <a
+                style={{ color: "#393185" }}
+                target="_blank"
+                href="https://www.google.com/maps/dir//RST+Booking+Private+Limited+(RS+Travels+Bangalore),+11%2F7,+1st+Floor,+18th+Main+Rd,+5th+Phase,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078/@12.901007,77.5863239,17z/data=!4m17!1m7!3m6!1s0x3bae15140c5b609b:0xba1ad6dd5991e031!2sRST+Booking+Private+Limited+(RS+Travels+Bangalore)!3b1!8m2!3d12.9010018!4d77.5885126!4m8!1m0!1m5!1m1!1s0x3bae15140c5b609b:0xba1ad6dd5991e031!2m2!1d77.5885126!2d12.9010018!3e3?hl=en"
+              >
+                11/7, 1st Floor, 18th Main Rd, 5th Phase, J. P. Nagar,
+                Bengaluru, Karnataka 560078
+              </a>
             </li>
 
             <li style={style}>
-              <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; +912321321321
+              <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+              <a style={{ color: "#393185" }} href="tel:+916364722299">
+                +916364722299
+              </a>
             </li>
             <li style={style}>
-              <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
-              info@rstbooking.com
+              <i
+                class="fa fa-mobile"
+                aria-hidden="true"
+                style={{ fontSize: "25px" }}
+              ></i>
+              &nbsp;
+              <a style={{ color: "#393185" }} href="tel:+918068464799">
+                +91&nbsp;8068464799
+              </a>
+            </li>
+            <li style={style}>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              &nbsp;&nbsp;
+              <a style={{ color: "#393185" }} href="mailto:info@rstbooking.com">
+                info@rstbooking.com
+              </a>
             </li>
           </ul>
           {/* <div className="media mt-2">

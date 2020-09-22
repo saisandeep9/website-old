@@ -123,7 +123,8 @@ class Form extends Component {
             />
           </label>
           <label className=" col-12 mt-4">
-            Message
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            &nbsp;&nbsp; Message
             <textarea
               row="4"
               // type="text"

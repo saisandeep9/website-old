@@ -7,13 +7,13 @@ const NavBar1 = () => {
     <div className="d-none d-md-block  ">
       <nav className="navbar  navbar-expand-md nav-bar1 justify-content-center  ">
         <ul className="  navbar-nav  ">
-          <li className="nav-item  ">
+          {/* <li className="nav-item  ">
             <i className="fa fa-phone " style={{ fontSize: "18px" }}></i>
             &nbsp;&nbsp;
-            <a className="text-white" href="tel:5554280940">
+            <a className="text-white" href="tel:+918068464799">
               +91&nbsp;8068464799
             </a>
-          </li>
+          </li> */}
           &nbsp;&nbsp;&nbsp;
           <li className="nav-item  ">
             {/* <i className="fa fa-phone " style={{ fontSize: "20px" }}></i> */}{" "}

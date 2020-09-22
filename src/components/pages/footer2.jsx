@@ -128,8 +128,8 @@ const Footer = () => {
             >
               {" "}
             </i>
-            &nbsp;&nbsp;11th A cross, Kodichikkanahalli Main Rd, Bommanahalli,
-            Bengaluru, Karnataka 560068
+            &nbsp;&nbsp;11/7, 1st Floor, 18th Main Rd, 5th Phase, J. P. Nagar,
+            Bengaluru, Karnataka 560078
           </label>
           <label htmlFor="" className="mb-3">
             <i
