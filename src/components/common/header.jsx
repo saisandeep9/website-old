@@ -8,7 +8,8 @@ const Header = (data) => {
         style={{
           height: "200px",
           // backgroundColor: "#393185",
-          background: " linear-gradient(var(--rstlog-color) 30%, #7d5baa 100%)",
+          background:
+            " linear-gradient(var(--rstlog-color) 30%, #183fee80 100%)",
           // marginBottom: "40px",
         }}
       >
@@ -24,7 +25,7 @@ const Header = (data) => {
       </header>
       <div
         className="container1"
-        style={{ marginTop: "-50px", backgroundColor: "white" }}
+        style={{ marginTop: "-70px", backgroundColor: "white" }}
       >
         <svg
           viewBox="0 0 500 500"
@@ -34,7 +35,7 @@ const Header = (data) => {
           <path
             d="M0, 100 C150, 200 350, 
         0 500, 100 L500, 00 L0, 0 Z"
-            style={{ stroke: "none", fill: "#1c18ee57" }}
+            style={{ stroke: "none", fill: "#1c18ee1c" }}
           ></path>
 
           <path
