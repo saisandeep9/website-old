@@ -15,7 +15,7 @@ const CoverPage2 = () => {
           />
 
           <Carousel.Caption className="caption">
-            <h2>RST Booking</h2>
+            <lable>RST Booking</lable>
             <p className="text-light">Your Trusted Taxi Partner</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -28,7 +28,7 @@ const CoverPage2 = () => {
           />
 
           <Carousel.Caption className="caption">
-            <h2 className="">Indian Taxis</h2>
+            <lable className="">Indian Taxis</lable>
             <p className="text-light">
               Quick, Hassle Free and Reliable Cab Services!{" "}
             </p>
@@ -43,7 +43,7 @@ const CoverPage2 = () => {
           />
 
           <Carousel.Caption className="caption">
-            <h2>My Taxi Cab</h2>
+            <lable>My Taxi Cab</lable>
             <p className="text-light">Drive With Us and Earn Higher!</p>
           </Carousel.Caption>
         </Carousel.Item>

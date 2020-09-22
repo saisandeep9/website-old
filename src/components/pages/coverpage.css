@@ -5,8 +5,27 @@
     color: #7474e5;
     line-height: 2.6;
   }
+  .coverPage .caption lable {
+    font-size: 40px;
+    font-weight: 700;
+  }
 
   .coverPage .caption p {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .coverPage .caption {
+    background: #20201ec1;
+    color: #7474e5;
+    line-height: 1.3;
+  }
+
+  .coverPage .caption lable {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .coverPage .caption p {
+    font-size: 15px;
   }
 }
