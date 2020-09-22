@@ -7,7 +7,8 @@ const Header = (data) => {
         className=" text-white  "
         style={{
           height: "200px",
-          backgroundColor: "#393185",
+          // backgroundColor: "#393185",
+          background: " linear-gradient(var(--rstlog-color) 30%, #7d5baa 100%)",
           // marginBottom: "40px",
         }}
       >

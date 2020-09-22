@@ -12,6 +12,7 @@
 }
 .testimonials .container-items {
   background: #20201e86;
+
   padding: 40px;
   width: 80%;
   margin-right: auto;
@@ -46,7 +47,7 @@
   font-style: normal;
   font-size: 100px;
   color: #7474e5;
-  top: 235px;
+  top: 245px;
   position: absolute;
 
   margin-left: 40px;

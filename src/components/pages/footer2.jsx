@@ -32,14 +32,22 @@ const Footer = () => {
           <div className="title-line-footer "></div>
 
           <p className="mt-2">
-            some text about the RST some text about the RST some text about the
-            RST booking some text about the RST booking
+            <span
+              className="text-light"
+              style={{ fontSize: "15px", fontWeight: "600" }}
+            >
+              RST Booking Private Ltd
+            </span>
+            &nbsp;aims to provide smart mobility solutions with the latest
+            technology. We assist drivers to become empowered entrepreneurs and
+            also offer commuters with quick, hassle-free and reliable local taxi
+            service at affordable rates.
           </p>
-          <img
+          {/* <img
             src="images/rstlog.png"
             style={{ width: "50px", height: "50px", marginTop: "10px" }}
             alt=""
-          />
+          /> */}
         </div>
         <div className="col-md-3 col-12 text-md-center pt-4">
           <h3 className=" text-light limoking-widget-title  ">
@@ -54,7 +62,7 @@ const Footer = () => {
               background: "#ffff",
             }}
           ></div>
-          <div className="title-line-footer d-none d-sm-block d-md-none"></div>
+          <div className="title-line-footer d-block d-sm-none "></div>
 
           <h3 className>
             <div className="row  justify-content-md-center">
@@ -96,7 +104,7 @@ const Footer = () => {
               background: "#ffff",
             }}
           ></div>
-          <div className="title-line-footer d-none d-sm-block d-md-none "></div>
+          <div className="title-line-footer d-block d-sm-none "></div>
 
           <p style={{ color: "white" }}>Indian Taxis</p>
 
@@ -108,7 +116,7 @@ const Footer = () => {
         </div>
         <div className="col-md-3 col-12 text-left pt-4 ">
           <h3 className="   limoking-widget-title">contact</h3>
-          <div className="title-line-footer d-none d-sm-block"></div>
+          <div className="title-line-footer "></div>
           <label htmlFor="" className="mb-3">
             <i
               className=" text-light fa fa-map-marker"

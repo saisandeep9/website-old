@@ -26,9 +26,8 @@ const Testimonials = () => {
 
                 <p className="text-light text-center text">
                   <i className="qt-open">“</i>
-                  This is text from the testimonials this is text from the
-                  testimonialsthis is text from the testimonials This is text
-                  from the testimonialsthis is text from the testimonials{" "}
+                  {t.text}
+
                   <span className="qt-close ">”</span>
                 </p>
 
@@ -59,9 +58,9 @@ const Testimonials = () => {
                       color: "#7474e5",
                     }}
                   >
-                    Sandeep
+                    {t.name}
                     <br />
-                    <small className="text-light">user </small>
+                    <small className="text-light">{t.userType} </small>
                   </p>
                 </div>
               </div>

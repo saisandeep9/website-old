@@ -86,7 +86,7 @@
 
 .header {
   height: 250px;
-  background: linear-gradient(var(--rstlog-color), #1e1e1e);
+  background: linear-gradient(var(--rstlog-color) 30%, #183fee80 100%);
   text-align: center;
   padding-top: 40px;
   margin: auto;
