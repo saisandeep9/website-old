@@ -14,7 +14,7 @@ const Mytaxicab = () => {
   let settings = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 200000,
     speed: 1000,
     focusOnSelect: true,
     // arrows: true,
@@ -182,11 +182,11 @@ const Mytaxicab = () => {
           <Slider {...settings}>
             <li>
               <img
-                src="mtc1.jpg"
+                src="mtc5.png"
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
-              <h5 className="mt-3">Gov Rates</h5>
+              <h5 className="mt-3">No Commission </h5>
             </li>
             <li>
               <img
@@ -202,7 +202,7 @@ const Mytaxicab = () => {
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
-              <h5 className="mt-3">No Commission</h5>
+              <h5 className="mt-3">Govt. Rates</h5>
             </li>
             <li>
               <img
@@ -210,7 +210,7 @@ const Mytaxicab = () => {
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
-              <h5 className="mt-3">Safe Raid</h5>
+              <h5 className="mt-3">Safe Raide</h5>
             </li>
             <li>
               <img
@@ -218,7 +218,7 @@ const Mytaxicab = () => {
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
-              <h5 className="mt-3">Flexible Billing </h5>
+              <h5 className="mt-3"> No Commission </h5>
             </li>
             <li>
               <img
@@ -226,7 +226,7 @@ const Mytaxicab = () => {
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
-              <h5 className="mt-3">No Commission</h5>
+              <h5 className="mt-3">Flexible Billing</h5>
             </li>
           </Slider>
         </ul>
