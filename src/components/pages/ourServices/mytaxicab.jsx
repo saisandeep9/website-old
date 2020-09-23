@@ -182,31 +182,7 @@ const Mytaxicab = () => {
           <Slider {...settings}>
             <li>
               <img
-                src="v1.jpg"
-                alt=""
-                style={{ height: "80px", width: "80px" }}
-              />
-              <h5 className="mt-3">Safe Raid</h5>
-            </li>
-            <li>
-              <img
-                src="v1.jpg"
-                alt=""
-                style={{ height: "80px", width: "80px" }}
-              />
-              <h5 className="mt-3">More Earnings </h5>
-            </li>
-            <li>
-              <img
-                src="v1.jpg"
-                alt=""
-                style={{ height: "80px", width: "80px" }}
-              />
-              <h5 className="mt-3">No Commission</h5>
-            </li>
-            <li>
-              <img
-                src="v1.jpg"
+                src="mtc1.jpg"
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
@@ -214,7 +190,31 @@ const Mytaxicab = () => {
             </li>
             <li>
               <img
-                src="v1.jpg"
+                src="mtc2.jpg"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+              <h5 className="mt-3">More Earnings </h5>
+            </li>
+            <li>
+              <img
+                src="mtc3.png"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+              <h5 className="mt-3">No Commission</h5>
+            </li>
+            <li>
+              <img
+                src="mtc4.png"
+                alt=""
+                style={{ height: "80px", width: "80px" }}
+              />
+              <h5 className="mt-3">Safe Raid</h5>
+            </li>
+            <li>
+              <img
+                src="mtc5.png"
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
@@ -222,7 +222,7 @@ const Mytaxicab = () => {
             </li>
             <li>
               <img
-                src="v1.jpg"
+                src="mtc6.png"
                 alt=""
                 style={{ height: "80px", width: "80px" }}
               />
