@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../common/header";
+import { Helmet } from "react-helmet";
 import MetaTags from "react-meta-tags";
 
 const About = () => {
@@ -11,12 +12,21 @@ const About = () => {
 
   return (
     <div className="wrapper">
-      <MetaTags>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About</title>
+        <meta name="descrition" content="this is about page" />
+      </Helmet>
+      {/* <MetaTags>
         <title>Page 1</title>
-        <meta id="about page" name="about " content="Some description." />
+        <meta
+          id="meta-description"
+          name="description"
+          content="Some description."
+        />
         <meta id="og-title" property="og:title" content="MyApp" />
         <meta id="og-image" property="og:image" content="path/to/image.jpg" />
-      </MetaTags>
+      </MetaTags> */}
 
       <div style={{ minHeight: "700px", marginTop: "80px" }}>
         <Header data={data} />
