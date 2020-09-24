@@ -57,7 +57,7 @@ class NavBar2 extends Component {
     return (
       <div className=" fixed-top  ">
         <NavBar1 />
-        {console.log(this.state.className)}
+        {/* {console.log(this.state.className)} */}
         <Navbar
           expand="md"
           // className="navbar nav-bar2 nav-bar2-nor "

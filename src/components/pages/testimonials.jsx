@@ -5,18 +5,13 @@ import "./testimonials.css";
 import testimonials from "../../data/testimonials";
 
 const Testimonials = () => {
-  console.log(
-    "testimonials",
-    testimonials.testimonials.map((t) => t.text)
-  );
-
   const testimonials_data = testimonials.testimonials;
 
   return (
     <div className="testimonials" style={{ minHeight: "540px " }}>
       <Carousel>
         {testimonials_data.map((t) => (
-          <Carousel.Item>
+          <Carousel.Item key={t.name}>
             <div className="item">
               <div className=" text-center container-items   ">
                 <h3 className="mt-2 mb-3 text-light text-center">
@@ -27,8 +22,7 @@ const Testimonials = () => {
                 <p className="text-light text-center text">
                   <i className="qt-open">“</i>
                   {t.text}
-
-                  <span className="qt-close ">”</span>
+                  <i className="qt-close ">”</i>
                 </p>
 
                 <div

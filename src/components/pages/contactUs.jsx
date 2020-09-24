@@ -46,7 +46,7 @@ const ContactUs = () => {
 
           <ul style={{ listStyle: "none" }}>
             <li style={style}>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+              <i className="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
               &nbsp;&nbsp;
               <a
                 style={{ color: "#393185" }}
@@ -59,14 +59,15 @@ const ContactUs = () => {
             </li>
 
             <li style={style}>
-              <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;
+              <i className="fa fa-phone" aria-hidden="true"></i>{" "}
+              &nbsp;&nbsp;&nbsp;
               <a style={{ color: "#393185" }} href="tel:+916364722299">
                 +916364722299
               </a>
             </li>
             <li style={style}>
               <i
-                class="fa fa-mobile"
+                className="fa fa-mobile"
                 aria-hidden="true"
                 style={{ fontSize: "25px" }}
               ></i>
@@ -76,7 +77,7 @@ const ContactUs = () => {
               </a>
             </li>
             <li style={style}>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a style={{ color: "#393185" }} href="mailto:info@rstbooking.com">
                 info@rstbooking.com
@@ -150,6 +151,7 @@ const ContactUs = () => {
             <h3>Location</h3>
             <div className="title-line-contact" />
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107738.57830893247!2d77.55706675685148!3d12.851232445283456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15140c5b609b%3A0xba1ad6dd5991e031!2sRST%20Booking%20Private%20Limited%20(RS%20Travels%20Bangalore)!5e0!3m2!1sen!2sin!4v1599824056337!5m2!1sen!2sin"
               style={{
                 width: "100%",

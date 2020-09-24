@@ -64,7 +64,7 @@ const Footer = () => {
           ></div>
           <div className="title-line-footer d-block d-sm-none "></div>
 
-          <h3 className>
+          <h3>
             <div className="row  justify-content-md-center">
               <div className="col-2">
                 <a target="_blank" href="http://localhost:3000/">

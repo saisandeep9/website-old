@@ -50,7 +50,7 @@ function PrevArrow(props) {
       onClick={onClick}
     >
       {" "}
-      <i class="fa fa-angle-left"></i>
+      <i className="fa fa-angle-left"></i>
     </div>
   );
 }

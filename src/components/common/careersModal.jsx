@@ -34,7 +34,7 @@ class CareersModal extends Component {
 
             <ul>
               {props.data.skills.map((s) => (
-                <li>{s}</li>
+                <li key={s}>{s}</li>
               ))}
             </ul>
             <p>

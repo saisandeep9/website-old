@@ -8,14 +8,25 @@ const About = () => {
     title: "About",
     subText: "Let Us Inspire You With Our Story! ",
   };
-  const style = {};
 
+  const header = [
+    {
+      name: "keywords",
+      content:
+        "My taxi cab, indian taxi, Onepage, Html, Business, Blog, Parallax",
+    },
+  ];
+
+  console.log(header.map((h) => h.name));
   return (
     <div className="wrapper">
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>About</title>
-        <meta name="descrition" content="this is about page" />
+        <meta name="description" content="about" />
+        <meta
+          name={header.name}
+          content="My taxi cab, indian taxi, Onepage, Html, Business, Blog, Parallax"
+        />
+        <title>about</title>
       </Helmet>
       {/* <MetaTags>
         <title>Page 1</title>
