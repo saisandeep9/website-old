@@ -20,14 +20,14 @@ const About = () => {
   console.log(header.map((h) => h.name));
   return (
     <div className="wrapper">
-      <Helmet>
+      {/* <Helmet>
         <meta name="description" content="about" />
         <meta
           name={header.name}
           content="My taxi cab, indian taxi, Onepage, Html, Business, Blog, Parallax"
         />
         <title>about</title>
-      </Helmet>
+      </Helmet> */}
       {/* <MetaTags>
         <title>Page 1</title>
         <meta
@@ -79,18 +79,35 @@ const About = () => {
             ensure that it is accessible to millions of drivers and commuters
             alike.
           </p>
-          <h3>About the Founders</h3>
-          <div className="title-line-contact "></div>
-          <p>
-            RST Booking Private Limited was founded and established by
-            Mr.Raghavendra, and Mrs. Kavitha with an aim to provide moblitity
-            for billions of Indians. Mr.Raghavendra has 14 years of rich
-            experience in the travel business. Earlier in 2014 he upgraded his
-            travel agency "RS Travels" to a proprietary concern and started
-            rendering cab services to various IT & BT industries and also to the
-            general public. He now owns a fleet of cabs to render a promising
-            future to drivers and uninterrupted services to customers.
-          </p>
+          <div style={{ marginTop: "50px", marginBottom: "90px" }}>
+            <h3>About the Founders</h3>
+            <div className="title-line-contact "></div>
+            <div
+              className="media p-3"
+              style={{
+                background:
+                  "linear-gradient(to right, #495bef 30%, var(--rstlog-color))",
+              }}
+            >
+              <img
+                className="align-self-center mr-3"
+                src="1.jpg"
+                alt=""
+                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
+              />
+              <p className="ml-5 text-light">
+                RST Booking Private Limited was founded and established by
+                Mr.Raghavendra, and Mrs. Kavitha with an aim to provide
+                moblitity for billions of Indians. Mr.Raghavendra has 14 years
+                of rich experience in the travel business. Earlier in 2014 he
+                upgraded his travel agency "RS Travels" to a proprietary concern
+                and started rendering cab services to various IT & BT industries
+                and also to the general public. He now owns a fleet of cabs to
+                render a promising future to drivers and uninterrupted services
+                to customers.
+              </p>
+            </div>
+          </div>
           <h3>Vision and Mission</h3>
           <div className="title-line-contact "></div>
           <p>

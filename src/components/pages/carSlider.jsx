@@ -122,7 +122,6 @@ class CarSlider extends Component {
                 ref={(slider) => (this.slider1 = slider)}
                 dots={true}
               >
-                {/* <Slider > */}
                 <li className="align-self-center">
                   <img
                     src="images/cars/sedanic.png"
